@@ -21,7 +21,7 @@ A Modern, Responsive Company Website built with Next.js 15, TypeScript, and Tail
 
 ## 🛠️ Tech Stack
 
-- **Framework**: Next.js 15.2.4
+- **Framework**: Next.js 15.5.4
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS
 - **UI Components**: Shadcn/ui
