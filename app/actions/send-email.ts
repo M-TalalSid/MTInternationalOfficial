@@ -1,4 +1,4 @@
-"use server"
+"use client"
 
 import emailjs from "@emailjs/browser"
 
@@ -16,7 +16,7 @@ interface EmailData {
 export async function sendContactEmail(data: EmailData) {
   try {
     // Initialize EmailJS with server-side key
-    emailjs.init(process.env.EMAILJS_PUBLIC_KEY || "")
+    emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || "")
 
     const templateParams = {
       from_name: data.name,
@@ -31,10 +31,10 @@ export async function sendContactEmail(data: EmailData) {
     }
 
     const result = await emailjs.send(
-      process.env.EMAILJS_SERVICE_ID || "",
-      process.env.EMAILJS_TEMPLATE_ID || "",
+      process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "",
+      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "",
       templateParams,
-      process.env.EMAILJS_PUBLIC_KEY || "",
+      process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || "",
     )
 
     if (result.status === 200) {
