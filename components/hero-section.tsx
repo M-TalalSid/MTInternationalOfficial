@@ -23,7 +23,7 @@ export default function HeroSection() {
 
       <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center relative z-10">
         {/* Left Content */}
-        <div className="space-y-8 animate-fade-in-up" style={{ animationDelay: "100ms" }}>
+        <div className="space-y-8 animate-fade-in-up mt-[-80px]" style={{ animationDelay: "100ms" }}>
           <h1 className="text-5xl lg:text-7xl font-bold text-white leading-tight text-balance">
             Unlock Premium{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 animate-gradient-x">
