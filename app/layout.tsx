@@ -80,10 +80,10 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "MT International",
-    url: "https://www.mt-international.com",
+    url: "https://www.mtinternationalofficial.com",
     logo: {
       "@type": "ImageObject",
-      url: "https://www.mt-international.com/CompanyLogo.webp",
+      url: "https://www.mtinternationalofficial.com/CompanyLogo.webp",
       width: "180",
       height: "60"
     },
@@ -98,7 +98,7 @@ export default function RootLayout({
       "@type": "ContactPoint",
       telephone: "+92-301-021-9324",
       contactType: "customer service",
-      email: "mtinternational139@gmail.com",
+      email: "Info@mtinternationalofficial.com",
       availableLanguage: ["English", "Urdu"]
     },
     sameAs: [
@@ -123,10 +123,10 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "MT International",
-    url: "https://www.mt-international.com",
+    url: "https://www.mtinternationalofficial.com",
     potentialAction: {
       "@type": "SearchAction",
-      target: "https://www.mt-international.com/search?q={search_term_string}",
+      target: "https://www.mtinternationalofficial.com/search?q={search_term_string}",
       "query-input": "required name=search_term_string"
     }
   };
