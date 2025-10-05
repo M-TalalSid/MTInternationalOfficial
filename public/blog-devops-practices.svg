@@ -1,0 +1,58 @@
+<svg width="500" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e3a8a" />
+    </linearGradient>
+    <linearGradient id="devopsGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="500" height="300" fill="url(#bgGradient)" />
+  
+  <!-- Grid pattern -->
+  <path d="M0 50 H500 M0 100 H500 M0 150 H500 M0 200 H500 M0 250 H500 M50 0 V300 M100 0 V300 M150 0 V300 M200 0 V300 M250 0 V300 M300 0 V300 M350 0 V300 M400 0 V300 M450 0 V300" stroke="#3b82f620" stroke-width="1" />
+  
+  <!-- DevOps Infinity Loop -->
+  <path d="M170 150 C170 120, 210 100, 250 100 C290 100, 330 120, 330 150 C330 180, 290 200, 250 200 C210 200, 170 180, 170 150 Z" fill="none" stroke="url(#devopsGradient)" stroke-width="3" />
+  <path d="M170 150 C170 180, 210 200, 250 200 C290 200, 330 180, 330 150 C330 120, 290 100, 250 100 C210 100, 170 120, 170 150 Z" fill="none" stroke="url(#devopsGradient)" stroke-width="3" />
+  
+  <!-- DevOps Icons -->
+  <!-- Code -->
+  <rect x="190" y="130" width="20" height="20" fill="#3b82f6" rx="2" />
+  <path d="M195 135 L200 140 L195 145 M205 135 L200 140 L205 145" stroke="white" stroke-width="1.5" fill="none" />
+  
+  <!-- Build -->
+  <rect x="220" y="110" width="20" height="20" fill="#3b82f6" rx="2" />
+  <path d="M225 120 L235 120 M230 115 L230 125" stroke="white" stroke-width="1.5" />
+  
+  <!-- Test -->
+  <rect x="260" y="110" width="20" height="20" fill="#3b82f6" rx="2" />
+  <path d="M265 115 L275 125 M265 125 L275 115" stroke="white" stroke-width="1.5" />
+  
+  <!-- Deploy -->
+  <rect x="290" y="130" width="20" height="20" fill="#3b82f6" rx="2" />
+  <path d="M295 140 L305 140 M300 135 L305 140 L300 145" stroke="white" stroke-width="1.5" />
+  
+  <!-- Monitor -->
+  <rect x="290" y="170" width="20" height="20" fill="#3b82f6" rx="2" />
+  <path d="M295 175 L295 185 L305 185 L305 175 M295 180 L305 180" stroke="white" stroke-width="1.5" />
+  
+  <!-- Plan -->
+  <rect x="260" y="170" width="20" height="20" fill="#3b82f6" rx="2" />
+  <circle cx="270" cy="180" r="5" stroke="white" stroke-width="1.5" fill="none" />
+  
+  <!-- Operate -->
+  <rect x="220" y="170" width="20" height="20" fill="#3b82f6" rx="2" />
+  <path d="M225 175 L235 185 M225 185 L235 175" stroke="white" stroke-width="1.5" />
+  
+  <!-- Feedback -->
+  <rect x="190" y="170" width="20" height="20" fill="#3b82f6" rx="2" />
+  <path d="M195 180 L205 180 M205 175 L205 185" stroke="white" stroke-width="1.5" />
+  
+  <!-- Title -->
+  <text x="250" y="40" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white" text-anchor="middle">Modern DevOps Practices</text>
+</svg>

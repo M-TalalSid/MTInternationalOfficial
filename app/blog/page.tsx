@@ -7,7 +7,30 @@ export const metadata: Metadata = {
   title: "Blog - MT International | Latest Tech Insights & Updates",
   description:
     "Stay updated with the latest trends in software development, technology insights, and industry news from MT International experts.",
-  keywords: "software development blog, tech insights, programming tutorials, industry news",
+  keywords: "software development blog, tech insights, programming tutorials, industry news, software engineering, web development trends, mobile app development, cloud computing, cybersecurity updates",
+  openGraph: {
+    title: "Blog - MT International | Latest Tech Insights & Updates",
+    description: "Stay updated with the latest trends in software development, technology insights, and industry news from MT International experts.",
+    type: "website",
+    url: "https://www.mt-international.com/blog",
+    images: [
+      {
+        url: "/blog-banner.webp",
+        width: 1200,
+        height: 630,
+        alt: "MT International Blog",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Blog - MT International | Latest Tech Insights & Updates",
+    description: "Stay updated with the latest trends in software development, technology insights, and industry news",
+    images: ["/blog-banner.webp"],
+  },
+  alternates: {
+    canonical: "https://www.mt-international.com/blog",
+  },
 }
 
 export default function BlogPage() {

@@ -11,7 +11,7 @@ const blogPosts = [
     date: "2025-01-15",
     readTime: "8 min read",
     category: "AI & Machine Learning",
-    image: "/placeholder.svg?height=300&width=500",
+    image: "/blog-ai-development.svg",
     slug: "future-of-ai-in-software-development",
   },
   {
@@ -23,7 +23,7 @@ const blogPosts = [
     date: "2025-01-12",
     readTime: "12 min read",
     category: "Cloud Computing",
-    image: "/placeholder.svg?height=300&width=500",
+    image: "/blog-cloud-applications.svg",
     slug: "building-scalable-cloud-applications",
   },
   {
@@ -34,7 +34,7 @@ const blogPosts = [
     date: "2025-01-10",
     readTime: "10 min read",
     category: "DevOps",
-    image: "/placeholder.svg?height=300&width=500",
+    image: "/blog-devops-practices.svg",
     slug: "modern-devops-practices-2025",
   },
   {
@@ -45,7 +45,7 @@ const blogPosts = [
     date: "2025-01-08",
     readTime: "15 min read",
     category: "Cybersecurity",
-    image: "/placeholder.svg?height=300&width=500",
+    image: "/blog-cybersecurity.svg",
     slug: "cybersecurity-best-practices-developers",
   },
   {
@@ -56,7 +56,7 @@ const blogPosts = [
     date: "2025-01-05",
     readTime: "7 min read",
     category: "Development Trends",
-    image: "/placeholder.svg?height=300&width=500",
+    image: "/blog-low-code.svg",
     slug: "rise-of-low-code-development",
   },
   {
@@ -67,7 +67,7 @@ const blogPosts = [
     date: "2025-01-03",
     readTime: "11 min read",
     category: "Mobile Development",
-    image: "/placeholder.svg?height=300&width=500",
+    image: "/blog-mobile-performance.svg",
     slug: "mobile-app-performance-optimization",
   },
 ]
@@ -83,8 +83,12 @@ export default function BlogGrid() {
           <div className="relative overflow-hidden">
             <img
               src={post.image || "/placeholder.svg"}
-              alt={post.title}
+              alt={`Featured image for ${post.title}`}
               className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+              width="500"
+              height="300"
+              loading="lazy"
+              decoding="async"
             />
             <div className="absolute top-4 left-4">
               <span className="bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-3 py-1 rounded-full text-sm font-medium shadow-lg">

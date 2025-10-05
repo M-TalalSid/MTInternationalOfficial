@@ -18,12 +18,12 @@ export const metadata: Metadata = {
   description:
     "Transform your business with cutting-edge custom software development, web applications, and digital solutions crafted by expert developers.",
   keywords:
-    "software development, web development, mobile apps, custom software, digital solutions",
+    "software development, web development, mobile apps, custom software, digital solutions, IT consulting, enterprise software, tech innovation, software engineering, digital transformation",
   metadataBase: new URL("https://www.mt-international.com"),
   openGraph: {
-    title: "MT International - Premium Software Solutions",
+    title: "MT International - Premium Software Solutions | Development & Innovation",
     description:
-      "Transform your business with cutting-edge custom software development",
+      "Transform your business with cutting-edge custom software development, web applications, and digital solutions crafted by expert developers.",
     type: "website",
     url: "https://www.mt-international.com",
     images: [
@@ -34,8 +34,41 @@ export const metadata: Metadata = {
         alt: "MT International - Custom Software Solutions",
       },
     ],
+    locale: "en_US",
+    siteName: "MT International",
   },
-    generator: 'v0.app'
+  twitter: {
+    card: "summary_large_image",
+    title: "MT International - Premium Software Solutions",
+    description: "Transform your business with cutting-edge custom software development",
+    images: ["/CompanyBanner.webp"],
+    creator: "@internatio24827",
+    site: "@internatio24827",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  alternates: {
+    canonical: "https://www.mt-international.com",
+  },
+  generator: 'v0.app',
+  authors: [{ name: "MT International Team" }],
+  category: "Technology",
+  applicationName: "MT International",
+  referrer: "origin-when-cross-origin",
+  viewport: "width=device-width, initial-scale=1",
+  themeColor: [
+    { media: "(prefers-color-scheme: dark)", color: "#000000" },
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" }
+  ],
 };
 
 export default function RootLayout({
@@ -43,12 +76,17 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const structuredData = {
+  const organizationData = {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "MT International",
     url: "https://www.mt-international.com",
-    logo: "https://www.mt-international.com/CompanyLogo.webp",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://www.mt-international.com/CompanyLogo.webp",
+      width: "180",
+      height: "60"
+    },
     description:
       "Transform your business with cutting-edge custom software development, web applications, and digital solutions crafted by expert developers.",
     address: {
@@ -61,6 +99,7 @@ export default function RootLayout({
       telephone: "+92-301-021-9324",
       contactType: "customer service",
       email: "mtinternational139@gmail.com",
+      availableLanguage: ["English", "Urdu"]
     },
     sameAs: [
       "https://www.linkedin.com/company/mt-inter-national/",
@@ -75,7 +114,24 @@ export default function RootLayout({
       "Cloud Solutions",
       "Cybersecurity",
     ],
+    foundingDate: "2020",
+    areaServed: ["Worldwide", "Pakistan", "United States", "United Kingdom", "UAE"],
+    keywords: "software development, web development, mobile apps, custom software, digital solutions"
   };
+  
+  const websiteData = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "MT International",
+    url: "https://www.mt-international.com",
+    potentialAction: {
+      "@type": "SearchAction",
+      target: "https://www.mt-international.com/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  };
+  
+  const structuredData = [organizationData, websiteData];
 
   return (
     <html lang="en" className="scroll-smooth dark" suppressHydrationWarning>
@@ -83,6 +139,7 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+          key="structured-data"
         />
       </head>
       <body

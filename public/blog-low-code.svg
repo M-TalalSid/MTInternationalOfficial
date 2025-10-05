@@ -1,0 +1,44 @@
+<svg width="500" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e3a8a" />
+    </linearGradient>
+    <linearGradient id="lowcodeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="500" height="300" fill="url(#bgGradient)" />
+  
+  <!-- Grid pattern -->
+  <path d="M0 50 H500 M0 100 H500 M0 150 H500 M0 200 H500 M0 250 H500 M50 0 V300 M100 0 V300 M150 0 V300 M200 0 V300 M250 0 V300 M300 0 V300 M350 0 V300 M400 0 V300 M450 0 V300" stroke="#3b82f620" stroke-width="1" />
+  
+  <!-- UI Builder Elements -->
+  <rect x="150" y="100" width="200" height="140" rx="5" fill="#1e3a8a" stroke="url(#lowcodeGradient)" stroke-width="2" />
+  
+  <!-- Drag and Drop Elements -->
+  <rect x="170" y="120" width="60" height="30" rx="3" fill="#3b82f6" opacity="0.7" />
+  <rect x="170" y="160" width="60" height="30" rx="3" fill="#3b82f6" opacity="0.7" />
+  <rect x="170" y="200" width="60" height="30" rx="3" fill="#3b82f6" opacity="0.7" />
+  
+  <!-- Component Canvas -->
+  <rect x="250" y="120" width="80" height="110" rx="3" fill="#0f172a" stroke="#3b82f6" stroke-width="1" />
+  
+  <!-- Component Wireframes -->
+  <rect x="260" y="130" width="60" height="10" rx="2" fill="#3b82f6" opacity="0.5" />
+  <rect x="260" y="150" width="60" height="20" rx="2" fill="#3b82f6" opacity="0.5" />
+  <rect x="260" y="180" width="25" height="10" rx="2" fill="#3b82f6" opacity="0.5" />
+  <rect x="295" y="180" width="25" height="10" rx="2" fill="#3b82f6" opacity="0.5" />
+  <rect x="260" y="200" width="60" height="20" rx="2" fill="#3b82f6" opacity="0.5" />
+  
+  <!-- Connector Lines -->
+  <path d="M230 135 L250 135" stroke="#3b82f6" stroke-width="2" stroke-dasharray="2,2" />
+  <path d="M230 175 L250 175" stroke="#3b82f6" stroke-width="2" stroke-dasharray="2,2" />
+  <path d="M230 215 L250 215" stroke="#3b82f6" stroke-width="2" stroke-dasharray="2,2" />
+  
+  <!-- Title -->
+  <text x="250" y="40" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white" text-anchor="middle">Low-Code Development</text>
+</svg>

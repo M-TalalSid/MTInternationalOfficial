@@ -1,0 +1,42 @@
+<svg width="500" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e3a8a" />
+    </linearGradient>
+    <linearGradient id="securityGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="500" height="300" fill="url(#bgGradient)" />
+  
+  <!-- Grid pattern -->
+  <path d="M0 50 H500 M0 100 H500 M0 150 H500 M0 200 H500 M0 250 H500 M50 0 V300 M100 0 V300 M150 0 V300 M200 0 V300 M250 0 V300 M300 0 V300 M350 0 V300 M400 0 V300 M450 0 V300" stroke="#3b82f620" stroke-width="1" />
+  
+  <!-- Shield outline -->
+  <path d="M250 80 L180 110 L180 180 C180 220, 250 250, 250 250 C250 250, 320 220, 320 180 L320 110 Z" fill="none" stroke="url(#securityGradient)" stroke-width="3" />
+  
+  <!-- Lock body -->
+  <rect x="225" y="140" width="50" height="40" rx="5" fill="url(#securityGradient)" />
+  
+  <!-- Lock shackle -->
+  <path d="M235 140 L235 120 C235 110, 265 110, 265 120 L265 140" stroke="url(#securityGradient)" stroke-width="8" fill="none" stroke-linecap="round" />
+  
+  <!-- Binary code background -->
+  <text x="200" y="120" font-family="monospace" font-size="8" fill="#3b82f640">10110101</text>
+  <text x="280" y="120" font-family="monospace" font-size="8" fill="#3b82f640">01001011</text>
+  <text x="190" y="200" font-family="monospace" font-size="8" fill="#3b82f640">11001010</text>
+  <text x="290" y="200" font-family="monospace" font-size="8" fill="#3b82f640">00110101</text>
+  <text x="210" y="220" font-family="monospace" font-size="8" fill="#3b82f640">10101100</text>
+  <text x="270" y="220" font-family="monospace" font-size="8" fill="#3b82f640">01010011</text>
+  
+  <!-- Keyhole -->
+  <circle cx="250" cy="160" r="8" fill="#0f172a" />
+  <rect x="248" y="160" width="4" height="10" fill="#0f172a" />
+  
+  <!-- Title -->
+  <text x="250" y="40" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white" text-anchor="middle">Cybersecurity Best Practices</text>
+</svg>

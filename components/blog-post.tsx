@@ -73,6 +73,10 @@ export default function BlogPost({ post }: BlogPostProps) {
           src={post.image || "/placeholder.svg"}
           alt={post.title}
           className="w-full h-64 lg:h-96 object-cover rounded-2xl shadow-2xl"
+          width="1200"
+          height="630"
+          loading="eager"
+          fetchPriority="high"
         />
       </div>
 

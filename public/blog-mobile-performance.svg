@@ -1,0 +1,52 @@
+<svg width="500" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e3a8a" />
+    </linearGradient>
+    <linearGradient id="mobileGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="500" height="300" fill="url(#bgGradient)" />
+  
+  <!-- Grid pattern -->
+  <path d="M0 50 H500 M0 100 H500 M0 150 H500 M0 200 H500 M0 250 H500 M50 0 V300 M100 0 V300 M150 0 V300 M200 0 V300 M250 0 V300 M300 0 V300 M350 0 V300 M400 0 V300 M450 0 V300" stroke="#3b82f620" stroke-width="1" />
+  
+  <!-- Mobile Phone Outline -->
+  <rect x="200" y="80" width="100" height="180" rx="10" fill="none" stroke="url(#mobileGradient)" stroke-width="3" />
+  
+  <!-- Screen -->
+  <rect x="210" y="100" width="80" height="140" rx="2" fill="#0f172a" />
+  
+  <!-- Performance Graph -->
+  <polyline points="220,200 230,180 240,190 250,160 260,170 270,140 280,120" stroke="url(#mobileGradient)" stroke-width="2" fill="none" />
+  
+  <!-- Speed Indicators -->
+  <circle cx="230" cy="180" r="3" fill="#3b82f6" />
+  <circle cx="250" cy="160" r="3" fill="#3b82f6" />
+  <circle cx="270" cy="140" r="3" fill="#3b82f6" />
+  
+  <!-- App UI Elements -->
+  <rect x="220" y="110" width="60" height="8" rx="2" fill="#3b82f6" opacity="0.5" />
+  <rect x="220" y="125" width="60" height="5" rx="2" fill="#3b82f6" opacity="0.3" />
+  <rect x="220" y="135" width="40" height="5" rx="2" fill="#3b82f6" opacity="0.3" />
+  
+  <!-- Home Button -->
+  <circle cx="250" cy="240" r="8" stroke="#3b82f6" stroke-width="2" fill="none" />
+  
+  <!-- Speed Indicators Around Phone -->
+  <path d="M180 140 L200 140" stroke="#3b82f6" stroke-width="2" />
+  <path d="M180 140 L190 135" stroke="#3b82f6" stroke-width="2" />
+  <path d="M180 140 L190 145" stroke="#3b82f6" stroke-width="2" />
+  
+  <path d="M320 140 L300 140" stroke="#3b82f6" stroke-width="2" />
+  <path d="M320 140 L310 135" stroke="#3b82f6" stroke-width="2" />
+  <path d="M320 140 L310 145" stroke="#3b82f6" stroke-width="2" />
+  
+  <!-- Title -->
+  <text x="250" y="40" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white" text-anchor="middle">Mobile App Performance</text>
+</svg>
