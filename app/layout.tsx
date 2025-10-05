@@ -42,8 +42,8 @@ export const metadata: Metadata = {
     title: "MT International - Premium Software Solutions",
     description: "Transform your business with cutting-edge custom software development and digital solutions",
     images: ["/MTInternatioonal.png"],
-    creator: "@internatio24827",
-    site: "@internatio24827",
+    creator: "@mtintl_official",
+    site: "@mtintl_official",
   },
   robots: {
     index: true,
@@ -102,10 +102,10 @@ export default function RootLayout({
       availableLanguage: ["English", "Urdu"]
     },
     sameAs: [
-      "https://www.linkedin.com/company/mt-inter-national/",
-      "https://x.com/internatio24827",
-      "https://www.facebook.com/share/156wB5sCG6h/?mibextid=wwXIfr",
-      "https://www.instagram.com/mt__international/",
+      "https://www.linkedin.com/company/mt-international-official/",
+      "https://x.com/mtintl_official/",
+      "https://www.facebook.com/profile.php?id=61578119033824",
+      "https://www.instagram.com/mt_international_official/",
     ],
     serviceType: [
       "Custom Software Development",
