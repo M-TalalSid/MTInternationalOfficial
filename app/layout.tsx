@@ -16,19 +16,19 @@ export const metadata: Metadata = {
   title:
     "MT International - Premium Software Solutions | Development & Innovation",
   description:
-    "Transform your business with cutting-edge custom software development, web applications, and digital solutions crafted by expert developers.",
+    "Transform your business with cutting-edge custom software development, web applications, and digital solutions crafted by expert developers. Expert team delivering enterprise-grade software solutions.",
   keywords:
-    "software development, web development, mobile apps, custom software, digital solutions, IT consulting, enterprise software, tech innovation, software engineering, digital transformation",
-  metadataBase: new URL("https://www.mt-international.com"),
+    "software development, web development, mobile apps, custom software, digital solutions, IT consulting, enterprise software, tech innovation, software engineering, digital transformation, MT International, software company Pakistan",
+  metadataBase: new URL("https://mtinternationalofficial.com"),
   openGraph: {
     title: "MT International - Premium Software Solutions | Development & Innovation",
     description:
-      "Transform your business with cutting-edge custom software development, web applications, and digital solutions crafted by expert developers.",
+      "Transform your business with cutting-edge custom software development, web applications, and digital solutions crafted by expert developers. Expert team delivering enterprise-grade software solutions.",
     type: "website",
-    url: "https://www.mt-international.com",
+    url: "https://mtinternationalofficial.com",
     images: [
       {
-        url: "/CompanyBanner.webp",
+        url: "/MTInternatioonal.png",
         width: 1200,
         height: 630,
         alt: "MT International - Custom Software Solutions",
@@ -40,8 +40,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "MT International - Premium Software Solutions",
-    description: "Transform your business with cutting-edge custom software development",
-    images: ["/CompanyBanner.webp"],
+    description: "Transform your business with cutting-edge custom software development and digital solutions",
+    images: ["/MTInternatioonal.png"],
     creator: "@internatio24827",
     site: "@internatio24827",
   },
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://www.mt-international.com",
+    canonical: "https://mtinternationalofficial.com",
   },
   generator: 'v0.app',
   authors: [{ name: "MT International Team" }],
