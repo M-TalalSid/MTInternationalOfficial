@@ -269,28 +269,28 @@ export function  InteractiveStatsGrid() {
       value: counters.projects,
       suffix: "+",
       label: "Projects Completed",
-      color: "from-blue-500 to-cyan-500",
+      color: "from-blue-400 to-cyan-400",
     },
     {
       icon: Users,
       value: counters.clients,
       suffix: "+",
       label: "Happy Clients",
-      color: "from-purple-500 to-pink-500",
+      color: "from-blue-400 to-cyan-400",
     },
     {
       icon: Award,
       value: counters.satisfaction,
       suffix: "%",
       label: "Client Satisfaction",
-      color: "from-green-500 to-teal-500",
+      color: "from-blue-400 to-cyan-400",
     },
     {
       icon: TrendingUp,
       value: counters.experience,
       suffix: "+",
       label: "Years Experience",
-      color: "from-orange-500 to-red-500",
+      color: "from-blue-400 to-cyan-400",
     },
   ]
 
@@ -299,7 +299,7 @@ export function  InteractiveStatsGrid() {
       {stats.map((stat, index) => (
         <div
           key={index}
-          className="bg-purple-800/30 backdrop-blur-sm rounded-2xl p-6 border border-purple-700/50 hover:border-purple-500/50 transition-all duration-300 hover:scale-105 group text-center"
+          className="bg-blue-500/10 backdrop-blur-xl rounded-2xl p-6 border border-purple-700/50 hover:border-purple-500/50 transition-all duration-300 hover:scale-105 group text-center"
         >
           <div
             className={`w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-r ${stat.color} p-0.5 group-hover:scale-110 transition-transform duration-300`}

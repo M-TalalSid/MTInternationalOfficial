@@ -33,7 +33,7 @@ export default function CompanyValues() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-white mb-6">
-            Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Values</span>
+            Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">Values</span>
           </h2>
           <p className="text-xl text-blue-200 max-w-3xl mx-auto">
             The principles that guide our work and define our culture

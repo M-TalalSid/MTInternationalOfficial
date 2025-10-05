@@ -19,48 +19,43 @@ const servicePricing = {
     packages: [
       {
         name: "Starter",
-        price: "$15,000",
-        duration: "8-12 weeks",
-        description: "Perfect for small to medium applications",
+        price: "$399",
+        duration: "4-6 weeks",
+        description: "Ideal for startups and small businesses needing tailored software.",
         features: [
-          "Requirements analysis",
-          "Custom application development",
-          "Basic testing & QA",
+          "Requirements gathering",
+          "Basic custom software design",
+          "Development & QA testing",
           "Deployment assistance",
           "30 days support",
-          "Documentation",
         ],
         popular: false,
       },
       {
         name: "Professional",
-        price: "$35,000",
-        duration: "12-16 weeks",
-        description: "Comprehensive solution for growing businesses",
+        price: "$999",
+        duration: "8-10 weeks",
+        description: "Comprehensive software solutions for growing organizations.",
         features: [
           "Everything in Starter",
-          "Advanced architecture design",
-          "API development & integration",
-          "Comprehensive testing",
-          "Performance optimization",
+          "Scalable architecture setup",
+          "API integration",
+          "Advanced testing & optimization",
           "90 days support",
-          "Training sessions",
         ],
         popular: true,
       },
       {
         name: "Enterprise",
         price: "Custom Quote",
-        duration: "16+ weeks",
-        description: "Large-scale solutions with full support",
+        duration: "12+ weeks",
+        description: "Full-scale enterprise-grade development with complete support.",
         features: [
           "Everything in Professional",
-          "Legacy system modernization",
-          "Advanced security implementation",
-          "Scalability planning",
-          "24/7 monitoring setup",
-          "1 year support",
-          "Dedicated project manager",
+          "Custom architecture design",
+          "Enterprise security compliance",
+          "Cloud deployment",
+          "1 year premium support",
         ],
         popular: false,
       },
@@ -69,83 +64,120 @@ const servicePricing = {
   "Web Development": {
     packages: [
       {
-        name: "Basic",
-        price: "$8,000",
-        duration: "4-6 weeks",
-        description: "Professional website for small businesses",
+        name: "Starter",
+        price: "$149",
+        duration: "2-3 weeks",
+        description: "Basic website setup for small businesses and personal brands.",
         features: [
           "Responsive design",
-          "Up to 10 pages",
-          "Contact forms",
-          "Basic SEO",
-          "30 days support",
-          "Content management system",
-        ],
-        popular: false,
-      },
-      {
-        name: "Advanced",
-        price: "$18,000",
-        duration: "6-10 weeks",
-        description: "Feature-rich web application",
-        features: [
-          "Everything in Basic",
-          "E-commerce functionality",
-          "User authentication",
-          "Database integration",
-          "Advanced SEO",
-          "90 days support",
-          "Performance optimization",
-        ],
-        popular: true,
-      },
-      {
-        name: "Premium",
-        price: "$35,000",
-        duration: "10-12 weeks",
-        description: "Complex web applications with advanced features",
-        features: [
-          "Everything in Advanced",
-          "Progressive Web App",
-          "Advanced analytics",
-          "Third-party integrations",
-          "Custom admin panel",
-          "6 months support",
-          "Ongoing maintenance",
-        ],
-        popular: false,
-      },
-    ],
-  },
-  // Add similar pricing structures for other services...
-  default: {
-    packages: [
-      {
-        name: "Starter",
-        price: "Contact Us",
-        duration: "4-8 weeks",
-        description: "Basic implementation for small projects",
-        features: [
-          "Initial consultation",
-          "Basic implementation",
-          "Testing & deployment",
-          "Documentation",
+          "Up to 5 pages",
+          "Basic SEO optimization",
+          "Contact form integration",
           "30 days support",
         ],
         popular: false,
       },
       {
         name: "Professional",
-        price: "Contact Us",
-        duration: "8-12 weeks",
-        description: "Comprehensive solution for businesses",
+        price: "$399",
+        duration: "4-6 weeks",
+        description: "Advanced web solutions for professional online presence.",
         features: [
           "Everything in Starter",
-          "Advanced features",
-          "Integration support",
+          "CMS integration (WordPress/Next.js)",
+          "E-commerce setup",
           "Performance optimization",
           "90 days support",
-          "Training included",
+        ],
+        popular: true,
+      },
+      {
+        name: "Enterprise",
+        price: "Custom Quote",
+        duration: "8+ weeks",
+        description: "High-performance and scalable web platforms for enterprises.",
+        features: [
+          "Everything in Professional",
+          "Custom admin dashboard",
+          "API & database integration",
+          "Cloud hosting setup",
+          "6 months premium support",
+        ],
+        popular: false,
+      },
+    ],
+  },
+  "Mobile App Development": {
+    packages: [
+      {
+        name: "Starter",
+        price: "$599",
+        duration: "6-8 weeks",
+        description: "Perfect for small mobile apps with core functionality.",
+        features: [
+          "UI/UX design",
+          "Basic app development (iOS/Android)",
+          "API integration",
+          "App store deployment",
+          "30 days support",
+        ],
+        popular: false,
+      },
+      {
+        name: "Professional",
+        price: "$1299",
+        duration: "10-14 weeks",
+        description: "End-to-end mobile app solutions for growing startups.",
+        features: [
+          "Everything in Starter",
+          "Push notifications",
+          "Payment gateway integration",
+          "Performance optimization",
+          "90 days support",
+        ],
+        popular: true,
+      },
+      {
+        name: "Enterprise",
+        price: "Custom Quote",
+        duration: "16+ weeks",
+        description: "Enterprise-grade mobile apps with full customization and scalability.",
+        features: [
+          "Everything in Professional",
+          "Custom backend development",
+          "Advanced analytics",
+          "Ongoing maintenance",
+          "1 year premium support",
+        ],
+        popular: false,
+      },
+    ],
+  },
+  "Cloud Solutions": {
+    packages: [
+      {
+        name: "Starter",
+        price: "$299",
+        duration: "3-5 weeks",
+        description: "Basic cloud setup for small-scale operations.",
+        features: [
+          "Cloud environment setup",
+          "Data migration support",
+          "Basic security configuration",
+          "30 days support",
+        ],
+        popular: false,
+      },
+      {
+        name: "Professional",
+        price: "$799",
+        duration: "6-10 weeks",
+        description: "Advanced cloud optimization for medium-sized businesses.",
+        features: [
+          "Everything in Starter",
+          "Cloud automation & monitoring",
+          "Backup & recovery systems",
+          "90 days support",
         ],
         popular: true,
       },
@@ -153,38 +185,252 @@ const servicePricing = {
         name: "Enterprise",
         price: "Custom Quote",
         duration: "12+ weeks",
-        description: "Full-scale enterprise solution",
+        description: "Enterprise-grade cloud infrastructure and scalability solutions.",
         features: [
           "Everything in Professional",
-          "Custom development",
-          "Priority support",
-          "Dedicated team",
-          "1 year support",
-          "Ongoing maintenance",
+          "Multi-cloud deployment",
+          "Advanced security compliance",
+          "24/7 support & monitoring",
         ],
         popular: false,
       },
     ],
   },
-}
+  "Cybersecurity": {
+    packages: [
+      {
+        name: "Starter",
+        price: "$399",
+        duration: "2-4 weeks",
+        description: "Essential protection for small businesses and startups.",
+        features: [
+          "Security assessment",
+          "Firewall setup",
+          "Malware protection",
+          "Basic penetration testing",
+          "30 days support",
+        ],
+        popular: false,
+      },
+      {
+        name: "Professional",
+        price: "$999",
+        duration: "5-8 weeks",
+        description: "Advanced protection and monitoring for growing organizations.",
+        features: [
+          "Everything in Starter",
+          "Threat intelligence integration",
+          "24/7 monitoring setup",
+          "90 days support",
+        ],
+        popular: true,
+      },
+      {
+        name: "Enterprise",
+        price: "Custom Quote",
+        duration: "10+ weeks",
+        description: "Full-scale enterprise cybersecurity infrastructure setup.",
+        features: [
+          "Everything in Professional",
+          "Incident response automation",
+          "Cloud & network hardening",
+          "Compliance reporting",
+        ],
+        popular: false,
+      },
+    ],
+  },
+  "Data Analytics": {
+    packages: [
+      {
+        name: "Starter",
+        price: "$499",
+        duration: "3-5 weeks",
+        description: "Data insights for small-scale analysis and reporting.",
+        features: [
+          "Data cleaning & visualization",
+          "Dashboard setup",
+          "Basic analytics reporting",
+          "30 days support",
+        ],
+        popular: false,
+      },
+      {
+        name: "Professional",
+        price: "$1099",
+        duration: "6-10 weeks",
+        description: "In-depth data analysis for strategic business insights.",
+        features: [
+          "Everything in Starter",
+          "Predictive modeling",
+          "Data pipeline automation",
+          "90 days support",
+        ],
+        popular: true,
+      },
+      {
+        name: "Enterprise",
+        price: "Custom Quote",
+        duration: "12+ weeks",
+        description: "Comprehensive enterprise-level analytics & AI integration.",
+        features: [
+          "Everything in Professional",
+          "Machine learning models",
+          "Big data integration",
+          "Custom KPI dashboards",
+        ],
+        popular: false,
+      },
+    ],
+  },
+  "Logo Designing": {
+    packages: [
+      {
+        name: "Starter",
+        price: "$49",
+        duration: "2-3 days",
+        description: "Simple and elegant logo for individuals or startups.",
+        features: [
+          "2 initial concepts",
+          "1 revision",
+          "High-resolution files",
+          "Delivery in PNG/JPG format",
+        ],
+        popular: false,
+      },
+      {
+        name: "Professional",
+        price: "$119",
+        duration: "4-5 days",
+        description: "Professional logo design with multiple revisions and options.",
+        features: [
+          "Everything in Starter",
+          "5 initial concepts",
+          "3 revisions",
+          "Vector & source files",
+        ],
+        popular: true,
+      },
+      {
+        name: "Enterprise",
+        price: "Custom Quote",
+        duration: "7+ days",
+        description: "Full branding package with multiple logo variants.",
+        features: [
+          "Everything in Professional",
+          "Brand guidelines",
+          "Typography & color palette",
+          "Social media kit",
+        ],
+        popular: false,
+      },
+    ],
+  },
+  "Script Writing": {
+    packages: [
+      {
+        name: "Starter",
+        price: "$99",
+        duration: "3-5 days",
+        description: "Short scripts for ads, social media, or YouTube videos.",
+        features: [
+          "Up to 2 pages script",
+          "1 revision",
+          "Delivery in Word/PDF",
+        ],
+        popular: false,
+      },
+      {
+        name: "Professional",
+        price: "$199",
+        duration: "1-2 weeks",
+        description: "Well-structured professional scripts for longer productions.",
+        features: [
+          "Everything in Starter",
+          "Up to 10 pages script",
+          "2 revisions",
+          "Formatting & storytelling polish",
+        ],
+        popular: true,
+      },
+      {
+        name: "Enterprise",
+        price: "Custom Quote",
+        duration: "2+ weeks",
+        description: "Full scriptwriting package for films, series, or commercials.",
+        features: [
+          "Everything in Professional",
+          "Character development",
+          "Scene breakdowns",
+          "Unlimited revisions",
+        ],
+        popular: false,
+      },
+    ],
+  },
+  "Graphic Designing": {
+    packages: [
+      {
+        name: "Starter",
+        price: "$99",
+        duration: "3-5 days",
+        description: "Basic design package for small projects and startups.",
+        features: [
+          "2 design concepts",
+          "1 revision",
+          "High-resolution delivery",
+        ],
+        popular: false,
+      },
+      {
+        name: "Professional",
+        price: "$249",
+        duration: "1-2 weeks",
+        description: "Professional design package for brands and businesses.",
+        features: [
+          "Everything in Starter",
+          "5 design concepts",
+          "3 revisions",
+          "Social media kit",
+        ],
+        popular: true,
+      },
+      {
+        name: "Enterprise",
+        price: "Custom Quote",
+        duration: "2+ weeks",
+        description: "Full-scale design suite for corporate identity and marketing.",
+        features: [
+          "Everything in Professional",
+          "Brand identity guidelines",
+          "Print & digital assets",
+          "Ongoing design support",
+        ],
+        popular: false,
+      },
+    ],
+  },
+};
 
 export default function ServiceDetail({ service }: ServiceDetailProps) {
-  const pricing = servicePricing[service.title as keyof typeof servicePricing] || servicePricing.default
+  const pricing = servicePricing[service.title as keyof typeof servicePricing] || {};
 
   return (
     <div className="container mx-auto px-4 ">
       {/* Back Button */}
       <Link
         href="/services"
-        className="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors duration-200 mb-8"
+        className="inline-flex items-center mt-8 text-blue-400 hover:text-blue-300 transition-colors duration-200 mb-8"
       >
-        <ArrowLeft className="w-4 h-4 mr-2 " />
+        <ArrowLeft className="w-4 h-4 mr-2  " />
         Back to Service
       </Link>
       {/* Hero Section */}
       <div className="text-center mb-16">
-        <h1 className="text-5xl lg:text-6xl font-bold text-white mb-6">{service.title}</h1>
-        <p className="text-xl text-blue-200 max-w-3xl mx-auto mb-8">{service.description}</p>
+        <h1 className="text-5xl lg:text-6xl font-bold text-white ">
+          {service.title}
+          </h1>
+        <p className="text-xl text-blue-200 max-w-3xl mx-auto mb-8 ">{service.description}</p>
 
         <Link href="/contact">
           <Button
@@ -221,7 +467,7 @@ export default function ServiceDetail({ service }: ServiceDetailProps) {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-white mb-6">
             Choose Your{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Package</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">Package</span>
           </h2>
           <p className="text-xl text-blue-200 max-w-3xl mx-auto">
             Flexible pricing options designed to meet your specific needs and budget
@@ -305,7 +551,10 @@ export default function ServiceDetail({ service }: ServiceDetailProps) {
 
       {/* Features */}
       <div className="mb-16">
-        <h2 className="text-3xl font-bold text-white mb-8 text-center">What's Included</h2>
+        <h2 className="text-3xl font-bold text-white mb-8 text-center">
+          What's{" "}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">Included</span>
+          </h2> 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {service.features.map((feature, index) => (
             <div
@@ -323,7 +572,10 @@ export default function ServiceDetail({ service }: ServiceDetailProps) {
 
       {/* Process */}
       <div className="mb-16">
-        <h2 className="text-3xl font-bold text-white mb-8 text-center">Our Process</h2>
+        <h2 className="text-3xl font-bold text-white mb-8 text-center">
+          Our{" "}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">Process</span>
+        </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {service.process.map((step, index) => (
             <div
@@ -340,7 +592,7 @@ export default function ServiceDetail({ service }: ServiceDetailProps) {
       </div>
 
       {/* CTA */}
-      <div className="text-center bg-blue-950/30 backdrop-blur-md rounded-2xl p-12 border border-blue-500/20 shadow-xl">
+      <div className="text-center bg-blue-950/30 backdrop-blur-md rounded-2xl p-12 border mb-16 border-blue-500/20 shadow-xl">
         <h2 className="text-3xl font-bold text-white mb-6">Ready to Get Started?</h2>
         <p className="text-xl text-blue-200 mb-8 max-w-2xl mx-auto">
           Let's discuss how our {service.title.toLowerCase()} services can help transform your business.

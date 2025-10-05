@@ -69,7 +69,7 @@ export default function TeamMember({ member, index }: TeamMemberProps) {
       ></div>
 
       {/* Card Content */}
-      <div className="relative z-10 bg-purple-800/40 backdrop-blur-[10px] rounded-2xl p-8 border border-purple-700/40 transition-all duration-200 group-hover:scale-[1.03] shadow-xl">
+      <div className="relative z-10 bg-blue-500/10 backdrop-blur-xl rounded-2xl p-8 border border-purple-700/40 transition-all duration-200 group-hover:scale-[1.03] shadow-xl">
                   <div className="relative w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-r from-purple-400 to-purple-600 p-1 group-hover:scale-110 transition-transform duration-200">
           <Image
             src={member.image || placeholderImage}

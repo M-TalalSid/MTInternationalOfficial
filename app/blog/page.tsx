@@ -17,8 +17,8 @@ export default function BlogPage() {
       <main className="">
         <div className="container mx-auto px-4 py-16">
           <div className="text-center mb-16">
-            <h1 className="text-5xl lg:text-6xl font-bold text-white mb-6">
-              Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Blog</span>
+            <h1 className="text-5xl lg:text-6xl font-bold text-white mb-6 mt-6">
+              Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 animate-gradient-x">Blog</span>
             </h1>
             <p className="text-xl text-blue-200 max-w-3xl mx-auto">
               Insights, tutorials, and updates from our team of software development experts

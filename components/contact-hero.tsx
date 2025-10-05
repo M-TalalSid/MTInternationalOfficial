@@ -21,7 +21,7 @@ export default function ContactHero() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-4xl mx-auto">
           <div className={`mb-8 ${mounted ? "animate-fade-in-up" : "opacity-0"}`}>
-            <div className="inline-flex items-center space-x-2 bg-blue-500/10 backdrop-blur-xl rounded-full px-6 py-3 border border-blue-500/20 mb-6">
+            <div className="inline-flex mt-6 items-center space-x-2 bg-blue-500/10 backdrop-blur-xl rounded-full px-6 py-3 border border-blue-500/20 mb-6">
               <MessageCircle className="w-5 h-5 text-blue-400" />
               <span className="text-blue-200 font-medium">Let's Start a Conversation</span>
             </div>
@@ -34,7 +34,7 @@ export default function ContactHero() {
             style={{ animationDelay: "200ms" }}
           >
             Get In{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Touch</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">Touch</span>
           </h1>
 
           <p

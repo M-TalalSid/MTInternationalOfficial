@@ -8,24 +8,31 @@ const services = [
     title: "Custom Software Development",
     description: "Tailored software solutions built to meet your specific business requirements.",
     slug: "custom-software-development",
+    color: "from-blue-400 to-cyan-400",
   },
   {
     icon: Smartphone,
     title: "Mobile App Development",
     description: "Native and cross-platform mobile applications for iOS and Android.",
     slug: "mobile-app-development",
+    color: "from-blue-400 to-cyan-400",
+
   },
   {
     icon: Cloud,
     title: "Cloud Solutions",
     description: "Scalable cloud infrastructure and migration services for modern businesses.",
     slug: "cloud-solutions",
+    color: "from-blue-400 to-cyan-400",
+
   },
   {
     icon: Shield,
     title: "Cybersecurity",
     description: "Comprehensive security solutions to protect your digital assets.",
     slug: "cybersecurity",
+    color: "from-blue-400 to-cyan-400",
+
   },
 ]
 
@@ -51,8 +58,8 @@ export default function ServicesPreview() {
               className="group glass-card rounded-2xl p-8 animate-fade-in-up"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="w-16 h-16 mb-6 rounded-full bg-gradient-to-r from-purple-400 to-pink-400 p-0.5 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
-                <div className="w-full h-full rounded-full bg-purple-900 flex items-center justify-center">
+              <div className="w-16 h-16 mb-6 rounded-full bg-gradient-to-r  p-0.5 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+                <div className="w-full h-full rounded-full  flex items-center justify-center">
                   <service.icon className="w-8 h-8 text-white" />
                 </div>
               </div>

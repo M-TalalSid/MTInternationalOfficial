@@ -10,14 +10,14 @@ export const metadata: Metadata = {
 
 export default function CookiesPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-950 via-blue-900 to-cyan-950">
+    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-slate-950">
       <Header />
       <main className="pt-20">
         <div className="container mx-auto px-4 py-16">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-4xl lg:text-5xl font-bold text-white mb-8">
               Cookie{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Policy</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">Policy</span>
             </h1>
 
             <div className="bg-blue-800/30 backdrop-blur-sm rounded-2xl p-8 border border-blue-700/50">

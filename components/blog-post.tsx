@@ -22,7 +22,7 @@ export default function BlogPost({ post }: BlogPostProps) {
       {/* Back Button */}
       <Link
         href="/blog"
-        className="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors duration-200 mb-8"
+        className="inline-flex items-center mt-8 text-blue-400 hover:text-blue-300 transition-colors duration-200 mb-8"
       >
         <ArrowLeft className="w-4 h-4 mr-2" />
         Back to Blog

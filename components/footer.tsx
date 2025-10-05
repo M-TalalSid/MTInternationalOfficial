@@ -23,7 +23,7 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               <Link
-                href="https://x.com/mtintl_official"
+                href="https://x.com/internatio24827"
                 className="w-10 h-10 glass-button rounded-lg flex items-center justify-center text-white hover:scale-110 transition-all duration-300"
                 aria-label="Twitter"
               >
@@ -31,7 +31,7 @@ export default function Footer() {
               </Link>
 
               <Link
-                href="https://www.linkedin.com/company/mt-international-official/"
+                href="https://www.linkedin.com/company/mt-inter-national/"
                 className="w-10 h-10 glass-button rounded-lg flex items-center justify-center text-white hover:scale-110 transition-all duration-300"
                 aria-label="LinkedIn"
               >
@@ -47,7 +47,7 @@ export default function Footer() {
               </Link>
 
               <Link
-                href="https://www.instagram.com/mt_international_official/"
+                href="https://www.instagram.com/mt__international/"
                 className="w-10 h-10 glass-button rounded-lg flex items-center justify-center text-white hover:scale-110 transition-all duration-300"
                 aria-label="Instagram"
               >

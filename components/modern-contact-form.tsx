@@ -7,7 +7,7 @@ import { Button } from "../components/ui/button"
 import { Input } from "../components/ui/input"
 import { Textarea } from "../components/ui/textarea"
 import { Send, CheckCircle, AlertCircle, User, Mail, Building, Phone, MessageSquare, DollarSign } from "lucide-react"
-import { sendContactEmail } from "../app/actions/send-email"
+import { sendContactEmail } from "@/app/actions/send-email"
 
 interface FormData {
   name: string

@@ -5,8 +5,8 @@ const teamMembers = [
     name: "M. Talal Shoaib",
     role: "Co-Founder & CEO",
     image: "/myprofilepic.jpg",
-    bio: "Visionary leader with 15+ years in software development and business strategy.",
-    quote: "I believe success lies in merging vision with action — and inspiring others to do the same.",
+    bio: "A Forward-Thinking Leader skilled in Team Leadership, Sales, and Digital Marketing, Also known for building strong teams and driving business growth. As Co-Founder & CEO of MT International, he focuses on transforming ambitious ideas into impactful solutions.",
+    quote: "Great leaders don’t just build companies — they build the people who build the future.",
     social: {
       linkedin: "https://www.linkedin.com/in/m-talal-shoaib/",
       twitter: "https://x.com/MTalalSid",
@@ -18,8 +18,8 @@ const teamMembers = [
     name: "M. Minhaj Azeem",
     role: "Co-Founder & COO",
     image: "/minhajprofilepic.webp",
-    bio: "Technical expert specializing in scalable architecture and emerging technologies.",
-    quote: "Great teams build great tech. I’m here to lead, learn, and level up together.",
+    bio: "A strategic operations leader and technical innovator, Minhaj specializes in scalable architecture and emerging technologies, ensuring MT International operates with precision and impact.",
+    quote: "Great teams build great tech, I’m here to lead, learn, and grow together.",
     social: {
       linkedin: "https://www.linkedin.com/in/minhaj-azeem-35a82a213/",
       twitter: "https://x.com/minhaj_azeem",
@@ -29,9 +29,9 @@ const teamMembers = [
   {
     name: "Adnan Zakaria",
     role: "CFO – Chief Financial Officer",
-    image: "/mamoprofilepic.JPG", // ✅ Add actual image file
-    bio: "Driving financial strategy, planning, and fiscal stability at MT International.",
-    quote: "Sustainable growth starts with disciplined financial foundations.",
+    image: "/mamoprofilepic.JPG",
+    bio: "Focused on financial strategy, planning, and sustainable growth, Adnan ensures MT International’s fiscal health remains strong and future-ready.",
+    quote: "Lasting growth begins with disciplined financial foundations.",
     social: {
       linkedin: "https://www.linkedin.com/in/adnan-zakaria", // ✅ Add real profile link
     },
@@ -40,8 +40,8 @@ const teamMembers = [
     name: "Abdul Wahid",
     role: "CTO – Chief Technology Officer",
     image: "/wahidprofilepic.webp",
-    bio: "Guiding our technical vision and driving cutting-edge solutions.",
-    quote: "Every pixel should have a purpose. Design is where empathy meets innovation.",
+    bio: "A visionary technologist who guides MT International’s technical direction, Wahid drives innovation by blending cutting-edge solutions with user-centric design.",
+    quote: "Every pixel should serve a purpose, where empathy meets innovation.",
     social: {
       linkedin: "https://www.linkedin.com/in/abdul-wahid-chohan/",
       twitter: "https://x.com/AbdulWahidChoh4",
@@ -53,8 +53,8 @@ const teamMembers = [
     name: "Abdul Ahad Afridi",
     role: "CPO – Chief Product Officer",
     image: "/ahadprofilepic.webp",
-    bio: "Full-stack developer passionate about clean code and innovative solutions.",
-    quote: "Code isn’t just logic — it’s poetry written in precision.",
+    bio: "A Full-Stack product leader passionate about building innovative solutions with clean, scalable code, Ahad transforms ideas into seamless digital experiences.",
+    quote: "Code isn’t just logic, it’s precision shaped into innovation.",
     social: {
       linkedin: "https://www.linkedin.com/in/abdul-ahad-afridi-ab74b2303/",
       twitter: "https://x.com/AAhadAfridi",
@@ -65,9 +65,9 @@ const teamMembers = [
   {
     name: "Hammad Abbasi",
     role: "Head of Operations & Delivery",
-    image: "/hammadprofilepic.webp",
-    bio: "Ensures smooth project delivery, scalable infrastructure, and secure deployments.",
-    quote: "Behind every smooth deployment is a thousand lines of invisible preparation.",
+    image: "/hammadprofilepic2.jpg",
+    bio: "A results-driven operations strategist, Hammad ensures smooth project delivery, scalable infrastructure, and secure deployments, empowering teams to execute flawlessly.",
+    quote: "Behind every smooth launch lies countless hours of unseen preparation.",
     social: {
       linkedin: "https://www.linkedin.com/in/hammad-abbasi-95388628b/",
       twitter: "https://x.com/HammadAbbasii01",
@@ -79,8 +79,8 @@ const teamMembers = [
     name: "Saad Darbari",
     role: "Head of Growth",
     image: "/saadprofilepic.webp",
-    bio: "Focused on scaling business reach, partnerships, and market expansion.",
-    quote: "A good plan today is better than a perfect plan tomorrow. Let’s execute with clarity.",
+    bio: "Specializing in business development, partnerships, and market expansion, Saad drives MT International’s global reach with data-driven growth strategies.",
+    quote: "A clear plan today beats a perfect plan tomorrow, execution drives success.",
     social: {
       linkedin: "https://www.linkedin.com/in/saaddarbari/",
       twitter: "https://x.com/Saad_Darbari",
@@ -92,8 +92,8 @@ const teamMembers = [
     name: "Zain Ul Abdeen",
     role: "Head of Marketing",
     image: "/zainprofilepic.webp",
-    bio: "Crafts brand narratives and drives marketing initiatives for maximum impact.",
-    quote: "If you speak to everyone, you speak to no one. Precision builds powerful brands.",
+    bio: "A brand strategist and creative storyteller, Zain crafts powerful narratives and precision-driven campaigns that elevate MT International’s market presence.",
+    quote: "If you try to speak to everyone, you reach no one, precision builds powerful brands.",
     social: {
       linkedin: "https://www.linkedin.com/in/zain-ul-abideen00/",
       twitter: "https://x.com/djzain33",
@@ -105,8 +105,8 @@ const teamMembers = [
     name: "M. Ashir Azeem",
     role: "Head of Industrial Automation",
     image: "/ashirprofilepic.JPG",
-    bio: "Leading PLC, embedded, and IoT automation services for industries.",
-    quote: "Innovation in automation drives efficiency and productivity for the future.",
+    bio: "A forward-thinking automation specialist, Ashir leads PLC, embedded systems, and IoT-driven solutions, optimizing industries for innovation and efficiency.",
+    quote: "Innovation in automation turns complexity into seamless productivity.",
     social: {
       linkedin: "https://www.linkedin.com/in/ashir-azeem", // ✅ Add real profile link
     },
@@ -120,24 +120,24 @@ export default function TeamSection() {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-white mb-6">
             Meet Our{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Team</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">Team</span>
           </h2>
           <p className="text-xl text-blue-200 max-w-3xl mx-auto">The Talented Individuals Behind Our Success</p>
         </div>
 
         {/* First Row - 4 cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7">
-          {teamMembers.slice(0, 4).map((member, index) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8  ">
+          {teamMembers.slice(0, 9).map((member, index) => (
             <TeamMember key={member.name} member={member} index={index} />
           ))}
         </div>
 
-        {/* Second Row - 3 cards */}
+        {/* Second Row - 3 cards
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
           {teamMembers.slice(4).map((member, index) => (
             <TeamMember key={member.name} member={member} index={index + 4} />
-          ))}
-        </div>
+          ))} */}
+        {/* </div> */}
       </div>
     </section>
   )

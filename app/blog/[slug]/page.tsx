@@ -9,7 +9,7 @@ const blogPosts = {
     title: "The Future of AI in Software Development",
     excerpt:
       "Explore how artificial intelligence is revolutionizing the way we build software and what it means for developers.",
-    author: "Sarah Chen",
+    author: "Abdul Wahid",
     date: "2025-01-15",
     readTime: "8 min read",
     category: "AI & Machine Learning",
@@ -40,7 +40,7 @@ const blogPosts = {
     title: "Building Scalable Cloud Applications",
     excerpt:
       "Learn best practices for designing and implementing cloud-native applications that can scale with your business.",
-    author: "Michael Rodriguez",
+    author: "Hammad Abbasi",
     date: "2025-01-12",
     readTime: "12 min read",
     category: "Cloud Computing",
@@ -83,7 +83,7 @@ const blogPosts = {
   "modern-devops-practices-2025": {
     title: "Modern DevOps Practices for 2025",
     excerpt: "Discover the latest DevOps trends and practices that are shaping software delivery in 2025.",
-    author: "David Kim",
+    author: "Saad Darbari",
     date: "2025-01-10",
     readTime: "10 min read",
     category: "DevOps",
@@ -131,7 +131,7 @@ const blogPosts = {
   "cybersecurity-best-practices-developers": {
     title: "Cybersecurity Best Practices for Developers",
     excerpt: "Essential security practices every developer should implement to protect applications from threats.",
-    author: "Alex Johnson",
+    author: "Zain Ul Abdeen",
     date: "2025-01-08",
     readTime: "15 min read",
     category: "Cybersecurity",
@@ -200,7 +200,7 @@ const blogPosts = {
   "rise-of-low-code-development": {
     title: "The Rise of Low-Code Development",
     excerpt: "How low-code platforms are changing the software development landscape and when to use them.",
-    author: "Emily Thompson",
+    author: "Abdul Ahad Afridi",
     date: "2025-01-05",
     readTime: "7 min read",
     category: "Development Trends",
@@ -255,7 +255,7 @@ const blogPosts = {
   "mobile-app-performance-optimization": {
     title: "Mobile App Performance Optimization",
     excerpt: "Techniques and strategies to optimize mobile app performance for better user experience.",
-    author: "Lisa Wang",
+    author: "M. Minhaj Azeem",
     date: "2025-01-03",
     readTime: "11 min read",
     category: "Mobile Development",

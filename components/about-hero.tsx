@@ -8,9 +8,9 @@ export default function AboutHero() {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl lg:text-6xl font-bold text-white mb-8">
+          <h1 className="text-5xl lg:text-6xl font-bold text-white mb-8 mt-4">
             About{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 animate-gradient-x">
               MT International
             </span>
           </h1>

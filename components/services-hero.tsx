@@ -35,7 +35,7 @@ export default function ServicesHero() {
             style={{ animationDelay: "200ms" }}
           >
             Transform Your Business with{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-400 animate-gradient-x">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 animate-gradient-x">
               Cutting-Edge Services
             </span>
           </h1>

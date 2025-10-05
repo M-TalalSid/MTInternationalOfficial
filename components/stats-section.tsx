@@ -8,25 +8,25 @@ const stats = [
     icon: RotateCcw,
     number: "50+",
     label: "Projects Completed",
-    color: "from-purple-400 to-pink-400",
+    color: "from-blue-400 to-cyan-400",
   },
   {
     icon: Star,
     number: "98%",
     label: "Client Satisfaction",
-    color: "from-pink-400 to-red-400",
+    color: "from-blue-400 to-cyan-400",
   },
   {
     icon: Users,
     number: "20+",
     label: "Team Members",
-    color: "from-blue-400 to-purple-400",
+    color: "from-blue-400 to-cyan-400",
   },
   {
     icon: TrendingUp,
     number: "2+",
     label: "Years Experience",
-    color: "from-green-400 to-blue-400",
+    color: "from-blue-400 to-cyan-400",
   },
 ]
 
