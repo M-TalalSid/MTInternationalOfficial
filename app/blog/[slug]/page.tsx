@@ -13,7 +13,7 @@ const blogPosts = {
     date: "2025-01-15",
     readTime: "8 min read",
     category: "AI & Machine Learning",
-    image: "/placeholder.svg?height=400&width=800",
+    image: "/blog-ai-development.svg",
     content: `
       <p>Artificial Intelligence is no longer a futuristic concept—it's actively reshaping how we approach software development today. From automated code generation to intelligent debugging, AI tools are becoming indispensable companions for developers worldwide.</p>
 
@@ -44,7 +44,7 @@ const blogPosts = {
     date: "2025-01-12",
     readTime: "12 min read",
     category: "Cloud Computing",
-    image: "/placeholder.svg?height=400&width=800",
+    image: "/blog-cloud-applications.svg",
     content: `
       <p>Building applications that can scale effectively in the cloud requires careful planning, architectural decisions, and implementation strategies. In this comprehensive guide, we'll explore the key principles and practices for creating scalable cloud applications.</p>
 
@@ -87,7 +87,7 @@ const blogPosts = {
     date: "2025-01-10",
     readTime: "10 min read",
     category: "DevOps",
-    image: "/placeholder.svg?height=400&width=800",
+    image: "/blog-devops-practices.svg",
     content: `
       <p>As we progress through 2025, DevOps continues to evolve with new tools, practices, and methodologies. Organizations that adapt to these modern practices will see improved efficiency, reliability, and speed in their software delivery processes.</p>
 
@@ -135,7 +135,7 @@ const blogPosts = {
     date: "2025-01-08",
     readTime: "15 min read",
     category: "Cybersecurity",
-    image: "/placeholder.svg?height=400&width=800",
+    image: "/blog-cybersecurity.svg",
     content: `
       <p>In today's digital landscape, cybersecurity is not just the responsibility of security teams—it's a critical concern for every developer. Building secure applications from the ground up is essential for protecting user data and maintaining trust.</p>
 
@@ -204,7 +204,7 @@ const blogPosts = {
     date: "2025-01-05",
     readTime: "7 min read",
     category: "Development Trends",
-    image: "/placeholder.svg?height=400&width=800",
+    image: "/blog-lowcode.svg",
     content: `
       <p>Low-code development platforms are transforming how organizations approach software creation, enabling faster development cycles and democratizing application building. But what exactly is low-code, and when should you consider using it?</p>
 
@@ -259,7 +259,7 @@ const blogPosts = {
     date: "2025-01-03",
     readTime: "11 min read",
     category: "Mobile Development",
-    image: "/placeholder.svg?height=400&width=800",
+    image: "/blog-mobile-performance.svg",
     content: `
       <p>Mobile app performance directly impacts user experience, retention rates, and app store rankings. In this comprehensive guide, we'll explore proven techniques to optimize your mobile app's performance across different platforms.</p>
 

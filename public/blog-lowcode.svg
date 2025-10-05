@@ -1,0 +1,72 @@
+<svg width="500" height="300" viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="lowcodeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="500" height="300" fill="#111827" rx="10" />
+  
+  <!-- Grid Background -->
+  <g opacity="0.1">
+    <line x1="0" y1="50" x2="500" y2="50" stroke="#10b981" stroke-width="0.5" />
+    <line x1="0" y1="100" x2="500" y2="100" stroke="#10b981" stroke-width="0.5" />
+    <line x1="0" y1="150" x2="500" y2="150" stroke="#10b981" stroke-width="0.5" />
+    <line x1="0" y1="200" x2="500" y2="200" stroke="#10b981" stroke-width="0.5" />
+    <line x1="0" y1="250" x2="500" y2="250" stroke="#10b981" stroke-width="0.5" />
+    
+    <line x1="100" y1="0" x2="100" y2="300" stroke="#10b981" stroke-width="0.5" />
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#10b981" stroke-width="0.5" />
+    <line x1="300" y1="0" x2="300" y2="300" stroke="#10b981" stroke-width="0.5" />
+    <line x1="400" y1="0" x2="400" y2="300" stroke="#10b981" stroke-width="0.5" />
+  </g>
+  
+  <!-- UI Components -->
+  <g>
+    <!-- Main UI Builder Area -->
+    <rect x="100" y="70" width="300" height="160" rx="5" fill="#1f2937" stroke="#10b981" stroke-width="2" />
+    
+    <!-- Drag and Drop Components -->
+    <rect x="120" y="90" width="80" height="40" rx="3" fill="url(#lowcodeGradient)" />
+    <rect x="210" y="90" width="80" height="40" rx="3" fill="url(#lowcodeGradient)" />
+    <rect x="300" y="90" width="80" height="40" rx="3" fill="url(#lowcodeGradient)" />
+    
+    <rect x="120" y="140" width="120" height="30" rx="3" fill="#374151" stroke="#10b981" stroke-width="1" />
+    <rect x="250" y="140" width="130" height="30" rx="3" fill="#374151" stroke="#10b981" stroke-width="1" />
+    
+    <rect x="120" y="180" width="260" height="30" rx="3" fill="#374151" stroke="#10b981" stroke-width="1" />
+  </g>
+  
+  <!-- Component Palette -->
+  <g>
+    <rect x="40" y="70" width="50" height="160" rx="5" fill="#1f2937" stroke="#10b981" stroke-width="2" />
+    
+    <rect x="50" y="85" width="30" height="15" rx="2" fill="#10b981" />
+    <rect x="50" y="110" width="30" height="15" rx="2" fill="#10b981" />
+    <rect x="50" y="135" width="30" height="15" rx="2" fill="#10b981" />
+    <rect x="50" y="160" width="30" height="15" rx="2" fill="#10b981" />
+    <rect x="50" y="185" width="30" height="15" rx="2" fill="#10b981" />
+    <rect x="50" y="210" width="30" height="15" rx="2" fill="#10b981" />
+  </g>
+  
+  <!-- Properties Panel -->
+  <g>
+    <rect x="410" y="70" width="50" height="160" rx="5" fill="#1f2937" stroke="#10b981" stroke-width="2" />
+    
+    <line x1="415" y1="90" x2="455" y2="90" stroke="#10b981" stroke-width="1" />
+    <line x1="415" y1="110" x2="455" y2="110" stroke="#10b981" stroke-width="1" />
+    <line x1="415" y1="130" x2="455" y2="130" stroke="#10b981" stroke-width="1" />
+    <line x1="415" y1="150" x2="455" y2="150" stroke="#10b981" stroke-width="1" />
+    <line x1="415" y1="170" x2="455" y2="170" stroke="#10b981" stroke-width="1" />
+    <line x1="415" y1="190" x2="455" y2="190" stroke="#10b981" stroke-width="1" />
+    <line x1="415" y1="210" x2="455" y2="210" stroke="#10b981" stroke-width="1" />
+  </g>
+  
+  <!-- Top Menu Bar -->
+  <rect x="40" y="40" width="420" height="20" rx="3" fill="#1f2937" stroke="#10b981" stroke-width="1" />
+  
+  <!-- Title -->
+  <text x="250" y="250" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">Low-Code Development</text>
+</svg>
