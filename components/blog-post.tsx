@@ -72,7 +72,7 @@ export default function BlogPost({ post }: BlogPostProps) {
         <img
           src={post.image || "/placeholder.svg"}
           alt={post.title}
-          className="w-full h-64 lg:h-96 object-cover rounded-2xl shadow-2xl"
+          className="w-full h-64 lg:h-96 object-contain rounded-2xl shadow-2xl"
           width="1200"
           height="630"
           loading="eager"
@@ -113,7 +113,7 @@ export default function BlogPost({ post }: BlogPostProps) {
           <img
             src="/placeholder.svg?height=80&width=80"
             alt={post.author}
-            className="w-16 h-16 rounded-full object-cover"
+            className="w-16 h-16 rounded-full object-contain"
           />
           <div>
             <h3 className="text-xl font-bold text-white mb-2">About {post.author}</h3>

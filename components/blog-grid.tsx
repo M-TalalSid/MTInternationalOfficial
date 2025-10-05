@@ -84,7 +84,7 @@ export default function BlogGrid() {
             <img
               src={post.image || "/placeholder.svg"}
               alt={`Featured image for ${post.title}`}
-              className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+              className="w-full h-48 object-contain group-hover:scale-110 transition-transform duration-300"
               width="500"
               height="300"
               loading="lazy"

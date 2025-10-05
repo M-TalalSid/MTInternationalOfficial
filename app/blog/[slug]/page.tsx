@@ -13,7 +13,6 @@ const blogPosts = {
     date: "2025-01-15",
     readTime: "8 min read",
     category: "AI & Machine Learning",
-    image: "/blog-ai-development.svg",
     content: `
       <p>Artificial Intelligence is no longer a futuristic concept—it's actively reshaping how we approach software development today. From automated code generation to intelligent debugging, AI tools are becoming indispensable companions for developers worldwide.</p>
 
@@ -35,6 +34,7 @@ const blogPosts = {
       <h2>Looking Ahead</h2>
       <p>As we move forward, we can expect to see even more sophisticated AI tools that understand context better, provide more accurate suggestions, and integrate seamlessly into development workflows. The future of software development is collaborative—between humans and AI.</p>
     `,
+    image: "/blog-ai-development.svg",
   },
   "building-scalable-cloud-applications": {
     title: "Building Scalable Cloud Applications",
@@ -44,7 +44,6 @@ const blogPosts = {
     date: "2025-01-12",
     readTime: "12 min read",
     category: "Cloud Computing",
-    image: "/blog-cloud-applications.svg",
     content: `
       <p>Building applications that can scale effectively in the cloud requires careful planning, architectural decisions, and implementation strategies. In this comprehensive guide, we'll explore the key principles and practices for creating scalable cloud applications.</p>
 
@@ -79,6 +78,7 @@ const blogPosts = {
       <h2>Best Practices Summary</h2>
       <p>To build truly scalable cloud applications, focus on stateless design, implement proper caching, use load balancers effectively, and always plan for failure. Remember that scalability is not just about handling more users—it's about maintaining performance and reliability as your application grows.</p>
     `,
+    image: "/blog-cloud-applications.svg",
   },
   "modern-devops-practices-2025": {
     title: "Modern DevOps Practices for 2025",
@@ -87,7 +87,6 @@ const blogPosts = {
     date: "2025-01-10",
     readTime: "10 min read",
     category: "DevOps",
-    image: "/blog-devops-practices.svg",
     content: `
       <p>As we progress through 2025, DevOps continues to evolve with new tools, practices, and methodologies. Organizations that adapt to these modern practices will see improved efficiency, reliability, and speed in their software delivery processes.</p>
 
@@ -127,6 +126,7 @@ const blogPosts = {
       <h2>The Future of DevOps</h2>
       <p>As we look ahead, DevOps will continue to evolve with greater automation, improved developer experiences, and more intelligent systems that can self-heal and optimize. Organizations that embrace these modern practices will be better positioned for success in the digital age.</p>
     `,
+    image: "/blog-devops-practices.svg",
   },
   "cybersecurity-best-practices-developers": {
     title: "Cybersecurity Best Practices for Developers",
@@ -135,7 +135,6 @@ const blogPosts = {
     date: "2025-01-08",
     readTime: "15 min read",
     category: "Cybersecurity",
-    image: "/blog-cybersecurity.svg",
     content: `
       <p>In today's digital landscape, cybersecurity is not just the responsibility of security teams—it's a critical concern for every developer. Building secure applications from the ground up is essential for protecting user data and maintaining trust.</p>
 
@@ -196,6 +195,7 @@ const blogPosts = {
       <h2>Staying Updated</h2>
       <p>Cybersecurity is an ever-evolving field. Stay informed about the latest threats, vulnerabilities, and security practices. Regularly update dependencies, follow security advisories, and participate in security training programs.</p>
     `,
+    image: "/blog-cybersecurity.svg",
   },
   "rise-of-low-code-development": {
     title: "The Rise of Low-Code Development",
@@ -204,7 +204,6 @@ const blogPosts = {
     date: "2025-01-05",
     readTime: "7 min read",
     category: "Development Trends",
-    image: "/blog-lowcode.svg",
     content: `
       <p>Low-code development platforms are transforming how organizations approach software creation, enabling faster development cycles and democratizing application building. But what exactly is low-code, and when should you consider using it?</p>
 
@@ -251,6 +250,7 @@ const blogPosts = {
       <h2>The Future of Low-Code</h2>
       <p>As low-code platforms continue to evolve, we can expect to see improved AI integration, better performance optimization, and enhanced customization capabilities. The key is understanding when low-code is the right choice for your project and how to leverage it effectively within your development strategy.</p>
     `,
+    image: "/blog-low-code.svg",
   },
   "mobile-app-performance-optimization": {
     title: "Mobile App Performance Optimization",
@@ -259,7 +259,6 @@ const blogPosts = {
     date: "2025-01-03",
     readTime: "11 min read",
     category: "Mobile Development",
-    image: "/blog-mobile-performance.svg",
     content: `
       <p>Mobile app performance directly impacts user experience, retention rates, and app store rankings. In this comprehensive guide, we'll explore proven techniques to optimize your mobile app's performance across different platforms.</p>
 
@@ -334,6 +333,7 @@ const blogPosts = {
       <h2>Best Practices Summary</h2>
       <p>Remember that performance optimization is an ongoing process. Start with measuring current performance, identify bottlenecks, implement optimizations, and continuously monitor the results. Focus on the optimizations that will have the most significant impact on your users' experience.</p>
     `,
+    image: "/blog-mobile-performance.svg",
   },
 }
 
@@ -355,6 +355,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${post.title} - MT International Blog`,
     description: post.excerpt,
     keywords: `${post.category.toLowerCase()}, software development, ${post.title.toLowerCase()}`,
+    openGraph: {
+      images: [`https://mtinternational.io${post.image}`],
+    },
+    twitter: {
+      images: [`https://mtinternational.io${post.image}`],
+    },
   }
 }
 
