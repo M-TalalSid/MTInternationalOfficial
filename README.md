@@ -36,7 +36,7 @@ This Project is Private and Proprietary to MT International.
 
 ## 📞 Contact
 
-- **Email**: mtinternational139@gmail.com
+- **Email**: Info@mtinternationalofficial.com
 - **Phone**: +92 (301) 021-9324
 - **Location**: Karachi, Pakistan
 
