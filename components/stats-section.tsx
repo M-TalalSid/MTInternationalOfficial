@@ -8,25 +8,23 @@ const stats = [
     icon: RotateCcw,
     number: "50+",
     label: "Projects Completed",
-    color: "from-blue-400 to-cyan-400",
+    // color: "from-blue-400 to-cyan-400",
   },
   {
     icon: Star,
     number: "98%",
     label: "Client Satisfaction",
-    color: "from-blue-400 to-cyan-400",
   },
   {
     icon: Users,
     number: "20+",
     label: "Team Members",
-    color: "from-blue-400 to-cyan-400",
   },
   {
     icon: TrendingUp,
     number: "2+",
     label: "Years Experience",
-    color: "from-blue-400 to-cyan-400",
+    color: "",
   },
 ]
 
@@ -52,7 +50,7 @@ export default function StatsSection() {
               <div
                 className={`w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r ${stat.color} p-0.5 group-hover:scale-110 transition-transform duration-300`}
               >
-                <div className="w-full h-full rounded-full bg-purple-900 flex items-center justify-center">
+                <div className="w-full h-full rounded-full from-blue-400 to-cyan-400 flex items-center justify-center">
                   <stat.icon className="w-8 h-8 text-white" />
                 </div>
               </div>
