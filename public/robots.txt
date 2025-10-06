@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://www.mt-international.com/sitemap.xml
+Sitemap: https://mtinternationalofficial.com/sitemap.xml
 
 # Disallow admin and private areas
 Disallow: /admin/
