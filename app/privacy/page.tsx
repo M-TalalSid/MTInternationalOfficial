@@ -72,7 +72,7 @@ export default function PrivacyPage() {
 
                 <h2 className="text-2xl font-bold text-white mb-4">9. Contact Us</h2>
                 <p className="text-blue-200 mb-6">
-                  If you have questions about this privacy policy, contact us at mtinternational139@gmail.com or +92
+                  If you have questions about this privacy policy, contact us at Info@mtinternationalofficial.com or +92
                   (301) 021-9324.
                 </p>
 
