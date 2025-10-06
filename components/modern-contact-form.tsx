@@ -299,11 +299,12 @@ export default function ModernContactForm() {
               className="w-full bg-blue-900/50 border-2 border-blue-600 text-white rounded-xl px-4 py-3 focus:border-blue-400 focus:outline-none transition-all duration-200"
             >
               <option value="">Select budget range</option>
-              <option value="5k-15k">$5,000 - $15,000</option>
-              <option value="15k-35k">$15,000 - $35,000</option>
-              <option value="35k-75k">$35,000 - $75,000</option>
-              <option value="75k+">$75,000+</option>
-              <option value="discuss">Let's discuss</option>
+              <option value="49-2k">$49 - $2000</option>
+              <option value="3k-5k">$2000 - $5,000</option>
+              <option value="5k-10k">$5,000 - $10,000</option>
+              <option value="10k-15k">$10,000 - $15,000</option>
+              <option value="15k-30k">$15,000 - $30,000</option>
+              <option value="discuss">Let's Discuss</option>
             </select>
           </div>
         </div>
@@ -322,8 +323,9 @@ export default function ModernContactForm() {
           >
             <option value="">Select timeline</option>
             <option value="asap">ASAP</option>
-            <option value="1-3months">1-3 months</option>
-            <option value="3-6months">3-6 months</option>
+            <option value="1-2months">1-2 months</option>
+            <option value="2-4months">2-4 months</option>
+            <option value="4-6months">4-6 months</option>
             <option value="6months+">6+ months</option>
             <option value="flexible">Flexible</option>
           </select>
