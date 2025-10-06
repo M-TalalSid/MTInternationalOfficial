@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: "Blog - MT International | Latest Tech Insights & Updates",
     description: "Stay updated with the latest trends in software development, technology insights, and industry news from MT International experts.",
     type: "website",
-    url: "https://www.mt-international.com/blog",
+    url: "https://www.mtinternationalofficial.com/blog",
     images: [
       {
         url: "/blog-banner.webp",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     images: ["/blog-banner.webp"],
   },
   alternates: {
-    canonical: "https://www.mt-international.com/blog",
+    canonical: "https://www.mtinternationalofficial.com/blog",
   },
 }
 
