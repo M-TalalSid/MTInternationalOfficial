@@ -23,7 +23,7 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               <Link
-                href="https://x.com/internatio24827"
+                href="https://x.com/mtintl_official/"
                 className="w-10 h-10 glass-button rounded-lg flex items-center justify-center text-white hover:scale-110 transition-all duration-300"
                 aria-label="Twitter"
               >
@@ -31,7 +31,7 @@ export default function Footer() {
               </Link>
 
               <Link
-                href="https://www.linkedin.com/company/mt-inter-national/"
+                href="https://www.linkedin.com/company/mt-international-official/"
                 className="w-10 h-10 glass-button rounded-lg flex items-center justify-center text-white hover:scale-110 transition-all duration-300"
                 aria-label="LinkedIn"
               >
@@ -39,7 +39,7 @@ export default function Footer() {
               </Link>
 
               <Link
-                href="https://www.facebook.com/share/156wB5sCG6h/?mibextid=wwXIfr"
+                href="https://www.facebook.com/profile.php?id=61578119033824"
                 className="w-10 h-10 glass-button rounded-lg flex items-center justify-center text-white hover:scale-110 transition-all duration-300"
                 aria-label="Facebook"
               >
@@ -47,7 +47,7 @@ export default function Footer() {
               </Link>
 
               <Link
-                href="https://www.instagram.com/mt__international/"
+                href="https://www.instagram.com/mt_international_official/"
                 className="w-10 h-10 glass-button rounded-lg flex items-center justify-center text-white hover:scale-110 transition-all duration-300"
                 aria-label="Instagram"
               >
@@ -104,7 +104,7 @@ export default function Footer() {
                 <div className="w-10 h-10 glass-button rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                   <Mail className="w-5 h-5 text-purple-300" />
                 </div>
-                <span className="text-purple-200 text-sm">mtinternational139@gmail.com</span>
+                <span className="text-purple-200 text-sm">Info@mtinternationalofficial.com</span>
               </div>
               <div className="flex items-center space-x-3 group">
                 <div className="w-10 h-10 glass-button rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
