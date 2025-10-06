@@ -21,6 +21,11 @@ export const metadata: Metadata = {
   keywords:
     "software development, web development, mobile apps, custom software, digital solutions, IT consulting, enterprise software, tech innovation, software engineering, digital transformation, MT International, software company Pakistan",
   metadataBase: new URL("https://mtinternationalofficial.com"),
+  icons: {
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
+  },
   openGraph: {
     title: "MT International - Premium Software Solutions | Development & Innovation",
     description:
