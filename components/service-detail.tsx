@@ -561,7 +561,7 @@ export default function ServiceDetail({ service }: ServiceDetailProps) {
               key={index}
               className="bg-blue-950/30 backdrop-blur-md rounded-xl p-6 border border-blue-500/20 hover:border-blue-400/40 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-blue-500/10"
             >
-              <div className="w-12 h-12 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-lg flex items-center justify-center mb-4 shadow-lg">
+              <div className="w-12 h-12 bg-gradient-to-r rounded-lg flex items-center justify-center mb-4 shadow-lg">
                 <Star className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-white font-semibold mb-2">{feature}</h3>
@@ -582,7 +582,7 @@ export default function ServiceDetail({ service }: ServiceDetailProps) {
               key={index}
               className="bg-blue-950/30 backdrop-blur-md rounded-2xl p-8 border border-blue-500/20 text-center shadow-lg hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300"
             >
-              <div className="w-16 h-16 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4 shadow-lg">
+              <div className="w-16 h-16 bg-gradient-to-r rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4 shadow-lg">
                 {index + 1}
               </div>
               <h3 className="text-xl font-semibold text-white mb-4">{step}</h3>
