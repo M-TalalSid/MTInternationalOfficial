@@ -33,7 +33,7 @@ const teamMembers = [
     bio: "Focused on financial strategy, planning, and sustainable growth, Adnan ensures MT International’s fiscal health remains strong and future-ready.",
     quote: "Lasting growth begins with disciplined financial foundations.",
     social: {
-      linkedin: "https://www.linkedin.com/in/adnan-zakaria", // ✅ Add real profile link
+      linkedin: "https://www.linkedin.com/in/adnan-zakaria",
     },
   },
   {
@@ -108,7 +108,7 @@ const teamMembers = [
     bio: "A forward-thinking automation specialist, Ashir leads PLC, embedded systems, and IoT-driven solutions, optimizing industries for innovation and efficiency.",
     quote: "Innovation in automation turns complexity into seamless productivity.",
     social: {
-      linkedin: "https://www.linkedin.com/in/ashir-azeem", // ✅ Add real profile link
+      linkedin: "https://www.linkedin.com/in/ashir-azeem",
     },
   },
 ]
@@ -131,13 +131,6 @@ export default function TeamSection() {
             <TeamMember key={member.name} member={member} index={index} />
           ))}
         </div>
-
-        {/* Second Row - 3 cards
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
-          {teamMembers.slice(4).map((member, index) => (
-            <TeamMember key={member.name} member={member} index={index + 4} />
-          ))} */}
-        {/* </div> */}
       </div>
     </section>
   )
