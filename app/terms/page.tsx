@@ -66,7 +66,7 @@ export default function TermsPage() {
 
                 <h2 className="text-2xl font-bold text-white mb-4">8. Contact Information</h2>
                 <p className="text-blue-200 mb-6">
-                  For questions about these terms, contact us at mtinternational139@gmail.com or +92 (301) 021-9324.
+                  For questions about these terms, contact us at Info@mtinternationalofficial.com or +92 (301) 021-9324.
                 </p>
 
                 <div className="mt-8 p-4 bg-blue-700/50 rounded-xl">
