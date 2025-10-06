@@ -40,17 +40,6 @@ export default function HeroSection() {
             Transform your business with cutting-edge custom software development, web applications, and digital
             solutions crafted by expert developers.
           </p>
-
-          {/* Uncomment and add glass button effect if needed
-          <Button
-            size="lg"
-            variant="glass"
-            className="px-8 py-4 rounded-full text-lg font-semibold group"
-          >
-            Start Project
-            <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
-          </Button>
-          */}
         </div>
 
         {/* Right Content - Floating Circles */}
