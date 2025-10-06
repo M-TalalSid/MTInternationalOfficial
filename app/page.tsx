@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     title: "MT International - Premium Software Solutions",
     description: "Transform your business with cutting-edge custom software development",
     type: "website",
+    url: "https://mtinternationalofficial.com/",
   },
 }
 
