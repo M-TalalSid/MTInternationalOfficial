@@ -32,7 +32,7 @@ export default function AboutPage() {
           <CompanyValues />
         </ScrollAnimation>
         <ScrollAnimation animation="scaleIn" delay={600}>
-          <div className="container mx-auto px-4 py-16">{/* <InteractiveTimeline /> */}</div>
+          <div className="container mx-auto px-4 py-16"></div>
         </ScrollAnimation>
         <ScrollAnimation animation="fadeInUp" delay={800}>
           <TeamSection />
