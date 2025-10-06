@@ -30,7 +30,7 @@ export default function ContactInfo() {
             </div>
             <div>
               <h4 className="text-white font-semibold mb-1">Email Us</h4>
-              <p className="text-blue-200">mtinternational139@gmail.com</p>
+              <p className="text-blue-200">Info@mtinternationalofficial.com</p>
             </div>
           </div>
 
