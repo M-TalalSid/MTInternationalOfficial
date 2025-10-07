@@ -1,37 +1,51 @@
-import * as React from "react";
-import type { Metadata } from "next";
-import "./globals.css";
-import { Inter } from "next/font/google";
-import { Toaster } from "../components/ui/toaster";
-import PageTransitions from "../components/page-transitions";
-import { ThemeProvider } from "../components/theme-provider";
+import type * as React from "react"
+import type { Metadata } from "next"
+import "./globals.css"
+import { Inter } from "next/font/google"
+import { Toaster } from "../components/ui/toaster"
+import PageTransitions from "../components/page-transitions"
+import { ThemeProvider } from "../components/theme-provider"
 import { Analytics } from "@vercel/analytics/next"
+import { Suspense } from "react"
 
 const inter = Inter({
   subsets: ["latin"],
   display: "swap", // Optional: improves font rendering
   preload: true,
-});
+})
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#000000",
+} as const
 
 export const metadata: Metadata = {
-  title:
-    "MT International - Premium Software Solutions | Development & Innovation",
+  title: "MT International - Premium Software Solutions | Development & Innovation",
   description:
     "Transform your business with cutting-edge custom software development, web applications, and digital solutions crafted by expert developers. Expert team delivering enterprise-grade software solutions.",
   keywords:
-    "software development, web development, mobile apps, custom software, digital solutions, IT consulting, enterprise software, tech innovation, software engineering, digital transformation, MT International, software company Pakistan",
-  metadataBase: new URL("https://mtinternationalofficial.com"),
+    "software development, web development, mobile apps, custom software, digital solutions, IT consulting, enterprise software, tech innovation, software engineering, digital transformation, MT International,MT International Official, mtinternationalofficial, mt international official, software company Pakistan",
+  metadataBase: new URL(
+    // Prefer env var for flexibility; fall back to canonical domain with www
+    process.env.NEXT_PUBLIC_SITE_URL || "https://www.mtinternationalofficial.com",
+  ),
+  // reference all required icons via Next metadata API
   icons: {
-    icon: "/favicon.png",
-    shortcut: "/favicon.png",
-    apple: "/favicon.png",
+    icon: [
+      { url: "/favicon-16x16.jpg", type: "image/png", sizes: "16x16" },
+      { url: "/favicon-32x32.jpg", type: "image/png", sizes: "32x32" },
+    ],
+    apple: [{ url: "/apple-touch-icon.jpg", type: "image/png", sizes: "180x180" }],
+    shortcut: ["/favicon-32x32.jpg"],
   },
+  manifest: "/manifest.json",
   openGraph: {
     title: "MT International - Premium Software Solutions | Development & Innovation",
     description:
       "Transform your business with cutting-edge custom software development, web applications, and digital solutions crafted by expert developers. Expert team delivering enterprise-grade software solutions.",
     type: "website",
-    url: "https://mtinternationalofficial.com",
+    url: "https://www.mtinternationalofficial.com",
     images: [
       {
         url: "/MTInternational.png",
@@ -57,30 +71,25 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
   alternates: {
-    canonical: "https://mtinternationalofficial.com",
+    canonical: "https://www.mtinternationalofficial.com",
   },
-  generator: 'v0.app',
+  generator: "v0.app",
   authors: [{ name: "MT International Team" }],
   category: "Technology",
   applicationName: "MT International",
   referrer: "origin-when-cross-origin",
-  viewport: "width=device-width, initial-scale=1",
-  themeColor: [
-    { media: "(prefers-color-scheme: dark)", color: "#000000" },
-    { media: "(prefers-color-scheme: light)", color: "#ffffff" }
-  ],
-};
+}
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   const organizationData = {
     "@context": "https://schema.org",
@@ -89,9 +98,9 @@ export default function RootLayout({
     url: "https://www.mtinternationalofficial.com",
     logo: {
       "@type": "ImageObject",
-      url: "https://www.mtinternationalofficial.com/favicon.png",
-      width: "180",
-      height: "60"
+      url: "https://www.mtinternationalofficial.com/MTInternational.png",
+      width: "1200",
+      height: "630",
     },
     description:
       "Transform your business with cutting-edge custom software development, web applications, and digital solutions crafted by expert developers.",
@@ -105,7 +114,7 @@ export default function RootLayout({
       telephone: "+92-301-021-9324",
       contactType: "customer service",
       email: "Info@mtinternationalofficial.com",
-      availableLanguage: ["English", "Urdu"]
+      availableLanguage: ["English", "Urdu"],
     },
     sameAs: [
       "https://www.linkedin.com/company/mt-international-official/",
@@ -122,9 +131,9 @@ export default function RootLayout({
     ],
     foundingDate: "2020",
     areaServed: ["Worldwide", "Pakistan", "United States", "United Kingdom", "UAE"],
-    keywords: "software development, web development, mobile apps, custom software, digital solutions"
-  };
-  
+    keywords: "software development, web development, mobile apps, custom software, digital solutions",
+  }
+
   const websiteData = {
     "@context": "https://schema.org",
     "@type": "WebSite",
@@ -133,11 +142,11 @@ export default function RootLayout({
     potentialAction: {
       "@type": "SearchAction",
       target: "https://www.mtinternationalofficial.com/search?q={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
-  };
-  
-  const structuredData = [organizationData, websiteData];
+      "query-input": "required name=search_term_string",
+    },
+  }
+
+  const structuredData = [organizationData, websiteData]
 
   return (
     <html lang="en" className="scroll-smooth dark" suppressHydrationWarning>
@@ -148,17 +157,16 @@ export default function RootLayout({
           key="structured-data"
         />
       </head>
-      <body
-        className={`${inter.className} bg-background text-foreground`}
-        suppressHydrationWarning
-      >
+      <body className={`${inter.className} bg-background text-foreground`} suppressHydrationWarning>
         {/* ✅ Wrap everything in ThemeProvider */}
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-          <PageTransitions>{children}</PageTransitions>
-          <Toaster />
+          <Suspense fallback={null}>
+            <PageTransitions>{children}</PageTransitions>
+            <Toaster />
+          </Suspense>
         </ThemeProvider>
         <Analytics />
       </body>
     </html>
-  );
+  )
 }
