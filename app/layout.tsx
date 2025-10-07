@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     url: "https://mtinternationalofficial.com",
     images: [
       {
-        url: "/MTInternatioonal.png",
+        url: "/MTInternational.png",
         width: 1200,
         height: 630,
         alt: "MT International - Custom Software Solutions",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "MT International - Premium Software Solutions",
     description: "Transform your business with cutting-edge custom software development and digital solutions",
-    images: ["/MTInternatioonal.png"],
+    images: ["/MTInternational.png"],
     creator: "@mtintl_official",
     site: "@mtintl_official",
   },
@@ -89,7 +89,7 @@ export default function RootLayout({
     url: "https://www.mtinternationalofficial.com",
     logo: {
       "@type": "ImageObject",
-      url: "https://www.mtinternationalofficial.com/CompanyLogo.webp",
+      url: "https://www.mtinternationalofficial.com/favicon.png",
       width: "180",
       height: "60"
     },
