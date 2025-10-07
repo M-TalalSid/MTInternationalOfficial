@@ -16,7 +16,65 @@ interface BlogPostProps {
   }
 }
 
+// 🧩 Team members with accurate info and bio
+const teamMembers: Record<
+  string,
+  { image: string; title: string; bio: string }
+> = {
+  "M. Talal Shoaib": {
+    image: "/myprofilepic.jpg",
+    title: "Co-Founder & CEO",
+    bio: "A forward-thinking leader skilled in team leadership, sales, and digital marketing. As Co-Founder & CEO of MT International, Talal focuses on transforming ambitious ideas into impactful, real-world solutions that drive growth and innovation.",
+  },
+  "M. Minhaj Azeem": {
+    image: "/minhajprofilepic.webp",
+    title: "Co-Founder & COO",
+    bio: "A strategic operations leader and technical innovator specializing in scalable architecture and emerging technologies. Minhaj ensures MT International runs with precision, collaboration, and excellence across every project.",
+  },
+  "Adnan Zakaria": {
+    image: "/mamoprofilepic.JPG",
+    title: "CFO – Chief Financial Officer",
+    bio: "Focused on financial strategy, sustainable growth, and disciplined fiscal management, Adnan keeps MT International’s financial foundation strong and future-ready.",
+  },
+  "Abdul Wahid": {
+    image: "/wahidprofilepic.webp",
+    title: "CTO – Chief Technology Officer",
+    bio: "A visionary technologist guiding MT International’s technical direction, Wahid blends creative design with cutting-edge solutions to deliver seamless, human-centered digital innovation.",
+  },
+  "Abdul Ahad Afridi": {
+    image: "/ahadprofilepic.webp",
+    title: "CPO – Chief Product Officer",
+    bio: "A full-stack product leader passionate about building innovative, scalable, and efficient digital experiences. Ahad transforms ideas into elegant, practical products that delight users and businesses alike.",
+  },
+  "Hammad Abbasi": {
+    image: "/hammadprofilepic2.jpg",
+    title: "Head of Operations & Delivery",
+    bio: "A results-driven operations strategist ensuring flawless project delivery, secure infrastructure, and reliable performance through precise planning and execution.",
+  },
+  "Saad Darbari": {
+    image: "/saadprofilepic.webp",
+    title: "Head of Growth",
+    bio: "Specializing in business development and data-driven market expansion, Saad drives MT International’s global growth through strategic partnerships and scalable solutions.",
+  },
+  "Zain Ul Abdeen": {
+    image: "/zainprofilepic.webp",
+    title: "Head of Marketing",
+    bio: "A creative storyteller and brand strategist who crafts powerful, data-backed narratives and precision-driven campaigns to elevate MT International’s global presence.",
+  },
+  "M. Ashir Azeem": {
+    image: "/ashirprofilepic.JPG",
+    title: "Head of Industrial Automation",
+    bio: "An automation specialist focused on PLC systems, embedded technologies, and IoT-driven solutions. Ashir leads innovation that turns complexity into seamless productivity.",
+  },
+}
+
 export default function BlogPost({ post }: BlogPostProps) {
+  const authorInfo = teamMembers[post.author] || {
+    image: "/placeholder.svg",
+    title: "Team Member",
+    bio: `${post.author} is a valued member of MT International, contributing insights in ${post.category.toLowerCase()}.`,
+  }
+
   return (
     <article className="container mx-auto px-4 mb-16 max-w-4xl">
       {/* Back Button */}
@@ -36,7 +94,9 @@ export default function BlogPost({ post }: BlogPostProps) {
           </span>
         </div>
 
-        <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">{post.title}</h1>
+        <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
+          {post.title}
+        </h1>
 
         <p className="text-xl text-blue-200 mb-8 leading-relaxed">{post.excerpt}</p>
 
@@ -107,21 +167,18 @@ export default function BlogPost({ post }: BlogPostProps) {
         />
       </div>
 
-      {/* Author Bio */}
+      {/* 🧑‍💻 Author Bio */}
       <div className="mt-12 bg-blue-950/30 backdrop-blur-md rounded-2xl p-8 border border-blue-500/20 shadow-xl">
         <div className="flex items-start space-x-4">
           <img
-            src="/placeholder.svg?height=80&width=80"
+            src={authorInfo.image}
             alt={post.author}
-            className="w-16 h-16 rounded-full object-contain"
+            className="w-20 h-20 rounded-full object-cover border-2 border-blue-400/60 shadow-lg"
           />
           <div>
-            <h3 className="text-xl font-bold text-white mb-2">About {post.author}</h3>
-            <p className="text-blue-200">
-              {post.author} is a senior software engineer at MT International with expertise in{" "}
-              {post.category.toLowerCase()}. With years of experience in the field, they regularly share insights and
-              best practices with the development community.
-            </p>
+            <h3 className="text-xl font-bold text-white mb-1">About {post.author}</h3>
+            <p className="text-blue-300 text-sm mb-2">{authorInfo.title}</p>
+            <p className="text-blue-200">{authorInfo.bio}</p>
           </div>
         </div>
       </div>
@@ -129,7 +186,9 @@ export default function BlogPost({ post }: BlogPostProps) {
       {/* Related Posts CTA */}
       <div className="mt-12 text-center">
         <h3 className="text-2xl font-bold text-white mb-4">Want to Read More?</h3>
-        <p className="text-blue-200 mb-6">Explore more insights and tutorials from our team of experts</p>
+        <p className="text-blue-200 mb-6">
+          Explore more insights and tutorials from our team of experts
+        </p>
         <Link href="/blog">
           <Button
             size="lg"
