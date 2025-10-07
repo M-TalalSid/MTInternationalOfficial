@@ -95,6 +95,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "MT International",
+    alternateName: "MT International Official",
     url: "https://www.mtinternationalofficial.com",
     logo: {
       "@type": "ImageObject",
@@ -129,8 +130,8 @@ export default function RootLayout({
       "Cloud Solutions",
       "Cybersecurity",
     ],
-    foundingDate: "2020",
-    areaServed: ["Worldwide", "Pakistan", "United States", "United Kingdom", "UAE"],
+    foundingDate: "2025",
+    areaServed: ["Worldwide", "Pakistan", "United States", "United Kingdom", "UAE", "Canada", "Australia", "Germany", "France", "Italy", "Spain", "Netherlands", "Sweden", "Norway", "Denmark", "Finland", "Switzerland", "Belgium", "Ireland", "New Zealand", "Singapore", "Hong Kong", "Japan", "South Korea"],
     keywords: "software development, web development, mobile apps, custom software, digital solutions",
   }
 
@@ -138,6 +139,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "MT International",
+    alternateName: "MT International Official",
     url: "https://www.mtinternationalofficial.com",
     potentialAction: {
       "@type": "SearchAction",
