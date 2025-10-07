@@ -173,7 +173,7 @@ export default function BlogPost({ post }: BlogPostProps) {
           <img
             src={authorInfo.image}
             alt={post.author}
-            className="w-20 h-20 rounded-full object-cover border-2 border-blue-400/60 shadow-lg"
+            className="w-20 h-20 rounded-full object-cover border-2 border-blue-400/60 shadow-md shadow-blue-400/10 transition-all duration-300 hover:scale-110 hover:shadow-blue-500/40"
           />
           <div>
             <h3 className="text-xl font-bold text-white mb-1">About {post.author}</h3>
