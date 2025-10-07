@@ -35,7 +35,7 @@ export default function Header() {
             <div className="relative w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 flex-shrink-0">
               <Image
                 src="/MTInternational.png"
-                alt="MT International Eagle Logo"
+                alt="MT International Official"
                 width={96}
                 height={96}
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
