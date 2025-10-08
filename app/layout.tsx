@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   description:
     "Transform your business with cutting-edge custom software development, web applications, and digital solutions crafted by expert developers. Expert team delivering enterprise-grade software solutions.",
   keywords:
-    "software development, web development, mobile apps, custom software, digital solutions, IT consulting, enterprise software, tech innovation, software engineering, digital transformation, MT International,MT International Official, mtinternationalofficial, mt international official, software company Pakistan",
+    "software development, web development, mobile apps, custom software, digital solutions, IT consulting, enterprise software, tech innovation, software engineering, digital transformation, MT International, MT International Official, mtinternationalofficial, mt international official, software company Pakistan",
   metadataBase: new URL(
     // Prefer env var for flexibility; fall back to canonical domain with www
     process.env.NEXT_PUBLIC_SITE_URL || "https://www.mtinternationalofficial.com",
