@@ -10,7 +10,32 @@ export const metadata: Metadata = {
   title: "Contact Us - MT International | Get In Touch",
   description:
     "Contact MT International for your software development needs. Get a free consultation and quote for your project.",
-  keywords: "contact mt international, software development consultation, get quote, contact form",
+  keywords: "contact mt international, software development consultation, get quote, contact form, mt international official, mt international",
+  openGraph: {
+    title: "Contact Us - MT International",
+    description:
+      "Get in touch with MT International for custom software development, consultations, and project quotes.",
+    url: "https://www.mtinternationalofficial.com/contact",
+    type: "website",
+    images: [
+      {
+        url: "/favicon.webp",
+        width: 1200,
+        height: 630,
+        alt: "Contact MT International",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Us - MT International",
+    description:
+      "Get in touch with MT International for custom software development, consultations, and project quotes.",
+    images: ["/favicon.webp"],
+  },
+  alternates: {
+    canonical: "https://www.mtinternationalofficial.com/contact",
+  },
 }
 
 export default function ContactPage() {
