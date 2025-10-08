@@ -12,8 +12,31 @@ export const metadata: Metadata = {
   title: "About Us - MT International | Our Story & Team",
   description:
     "Learn about MT International, our mission, values, and the expert team behind our innovative software solutions.",
-  keywords: "about mt international, software company, development team, company values, mission",
-}
+  keywords: "about mt international, software company, development team, company values, mission, mt international official, mt international, software company Pakistan",
+  openGraph: {
+    title: "About Us - MT International",
+    description: "Discover MT International’s story, mission, and the expert team driving our success.",
+    url: "https://www.mtinternationalofficial.com/about",
+    type: "website",
+    images: [
+      {
+        url: "/favicon.webp",
+        width: 1200,
+        height: 630,
+        alt: "About MT International",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Us - MT International",
+    description: "Discover MT International’s story, mission, and the expert team driving our success.",
+    images: ["/favicon.webp"],
+  },
+  alternates: {
+    canonical: "https://www.mtinternationalofficial.com/about",
+  },
+};
 
 export default function AboutPage() {
   return (
