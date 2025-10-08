@@ -10,7 +10,32 @@ export const metadata: Metadata = {
   title: "Our Services - MT International | Software Development Solutions",
   description:
     "Explore our comprehensive range of software development services including custom development, mobile apps, cloud solutions, and more.",
-  keywords: "software services, custom development, mobile apps, web development, cloud solutions",
+  keywords: "software services, custom development, mobile apps, web development, cloud solutions, mt international official, mt international, software company Pakistan",
+  openGraph: {
+    title: "Our Services - MT International",
+    description:
+      "Explore MT International’s wide range of software development solutions for startups and enterprises.",
+    url: "https://www.mtinternationalofficial.com/services",
+    type: "website",
+    images: [
+      {
+        url: "/favicon.webp",
+        width: 1200,
+        height: 630,
+        alt: "Our Services - MT International",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Our Services - MT International",
+    description:
+      "Explore MT International’s wide range of software development solutions for startups and enterprises.",
+    images: ["/favicon.webp"],
+  },
+  alternates: {
+    canonical: "https://www.mtinternationalofficial.com/services",
+  },
 }
 
 export default function ServicesPage() {
