@@ -33,11 +33,11 @@ export const metadata: Metadata = {
   // reference all required icons via Next metadata API
   icons: {
     icon: [
-      { url: "/favicon-16x16.jpg", type: "image/png", sizes: "16x16" },
-      { url: "/favicon-32x32.jpg", type: "image/png", sizes: "32x32" },
+      { url: "/favicon-16x16.png", type: "image/png", sizes: "16x16" },
+      { url: "/favicon-32x32.png", type: "image/png", sizes: "32x32" },
     ],
-    apple: [{ url: "/apple-touch-icon.jpg", type: "image/png", sizes: "180x180" }],
-    shortcut: ["/favicon-32x32.jpg"],
+    apple: [{ url: "/apple-touch-icon.png", type: "image/png", sizes: "180x180" }],
+    shortcut: ["/favicon.ico"],
   },
   manifest: "/manifest.json",
   openGraph: {
