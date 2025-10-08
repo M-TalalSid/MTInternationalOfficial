@@ -356,10 +356,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: post.excerpt,
     keywords: `${post.category.toLowerCase()}, software development, ${post.title.toLowerCase()}`,
     openGraph: {
-      images: [`https://mtinternational.io${post.image}`],
+      images: [`https://mtinternationalofficial.com${post.image}`],
     },
     twitter: {
-      images: [`https://mtinternational.io${post.image}`],
+      images: [`https://mtinternationalofficial.com${post.image}`],
     },
   }
 }
