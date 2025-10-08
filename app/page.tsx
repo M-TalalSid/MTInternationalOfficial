@@ -10,14 +10,32 @@ export const metadata: Metadata = {
   title: "MT International - Premium Software Solutions | Development & Innovation",
   description:
     "Transform your business with cutting-edge custom software development, web applications, and digital solutions crafted by expert developers.",
-  keywords: "software development, web development, mobile apps, custom software, digital solutions",
+  keywords: "software development, web development, mobile apps, custom software, digital solutions, mt international official, mt international, software company Pakistan",
   openGraph: {
     title: "MT International - Premium Software Solutions",
-    description: "Transform your business with cutting-edge custom software development",
+    description: "Transform your business with cutting-edge custom software development, web applications, and digital solutions.",
+    url: "https://www.mtinternationalofficial.com",
     type: "website",
-    url: "https://mtinternationalofficial.com/",
+    images: [
+      {
+        url: "/favicon.webp",
+        width: 1200,
+        height: 630,
+        alt: "MT International - Premium Software Solutions",
+      },
+    ],
   },
-}
+  twitter: {
+    card: "summary_large_image",
+    title: "MT International - Premium Software Solutions",
+    description:
+      "Transform your business with cutting-edge custom software development, web applications, and digital solutions.",
+    images: ["/favicon.webp"],
+  },
+  alternates: {
+    canonical: "https://www.mtinternationalofficial.com",
+  },
+};
 
 export default function HomePage() {
   return (
