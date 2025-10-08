@@ -44,7 +44,7 @@ export default function BlogPage() {
               Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 animate-gradient-x">Blog</span>
             </h1>
             <p className="text-xl text-blue-200 max-w-3xl mx-auto">
-              Insights, tutorials, and updates from our team of software development experts
+              Insights, Tutorials & Updates From Our Team of Software Development Experts
             </p>
           </div>
           <BlogGrid />
