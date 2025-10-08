@@ -1,5 +1,5 @@
 import type * as React from "react"
-import type { Metadata } from "next"
+import type { Metadata, Viewport } from "next"
 import "./globals.css"
 import { Inter } from "next/font/google"
 import { Toaster } from "../components/ui/toaster"
@@ -14,11 +14,14 @@ const inter = Inter({
   preload: true,
 })
 
-export const viewport = {
+// Single correct viewport export
+export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
+  maximumScale: 5,
+  viewportFit: "cover",
   themeColor: "#000000",
-} as const
+}
 
 export const metadata: Metadata = {
   title: "MT International - Premium Software Solutions | Development & Innovation",
