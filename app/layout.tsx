@@ -101,8 +101,8 @@ export default function RootLayout({
     logo: {
       "@type": "ImageObject",
       url: `${siteUrl}/MTInternational.png`,
-      width: "1200",
-      height: "630",
+      width: "512",
+      height: "512",
     },
     description:
       "Transform your business with cutting-edge custom software development, web applications, and digital solutions crafted by expert developers.",
