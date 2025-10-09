@@ -10,11 +10,13 @@ import { Suspense } from "react"
 
 const inter = Inter({
   subsets: ["latin"],
-  display: "swap", // Optional: improves font rendering
+  display: "swap",
   preload: true,
 })
 
-// Single correct viewport export
+// ✅ Define once, use everywhere
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.mtinternationalofficial.com"
+
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
@@ -29,11 +31,7 @@ export const metadata: Metadata = {
     "Transform your business with cutting-edge custom software development, web applications, and digital solutions crafted by expert developers. Expert team delivering enterprise-grade software solutions.",
   keywords:
     "software development, web development, mobile apps, custom software, digital solutions, IT consulting, enterprise software, tech innovation, software engineering, digital transformation, MT International, MT International Official, mtinternationalofficial, mt international official, software company Pakistan",
-  metadataBase: new URL(
-    // Prefer env var for flexibility; fall back to canonical domain with www
-    process.env.NEXT_PUBLIC_SITE_URL || "https://www.mtinternationalofficial.com",
-  ),
-  // reference all required icons via Next metadata API
+  metadataBase: new URL(siteUrl),
   icons: {
     icon: [
       { url: "/favicon-16x16.png", type: "image/png", sizes: "16x16" },
@@ -48,10 +46,10 @@ export const metadata: Metadata = {
     description:
       "Transform your business with cutting-edge custom software development, web applications, and digital solutions crafted by expert developers. Expert team delivering enterprise-grade software solutions.",
     type: "website",
-    url: "https://www.mtinternationalofficial.com",
+    url: siteUrl,
     images: [
       {
-        url: "/MTInternational.png",
+        url: `${siteUrl}/MTInternational.png`,
         width: 1200,
         height: 630,
         alt: "MT International - Custom Software Solutions",
@@ -64,7 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "MT International - Premium Software Solutions",
     description: "Transform your business with cutting-edge custom software development and digital solutions",
-    images: ["/MTInternational.png"],
+    images: [`${siteUrl}/MTInternational.png`],
     creator: "@mtintl_official",
     site: "@mtintl_official",
   },
@@ -80,7 +78,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://www.mtinternationalofficial.com",
+    canonical: siteUrl,
   },
   generator: "v0.app",
   authors: [{ name: "MT International Team" }],
@@ -99,10 +97,10 @@ export default function RootLayout({
     "@type": "Organization",
     name: "MT International",
     alternateName: "MT International Official",
-    url: "https://www.mtinternationalofficial.com",
+    url: siteUrl,
     logo: {
       "@type": "ImageObject",
-      url: "https://www.mtinternationalofficial.com/MTInternational.png",
+      url: `${siteUrl}/MTInternational.png`,
       width: "1200",
       height: "630",
     },
@@ -134,7 +132,7 @@ export default function RootLayout({
       "Cybersecurity",
     ],
     foundingDate: "2025",
-    areaServed: ["Worldwide", "Pakistan", "United States", "United Kingdom", "UAE", "Canada", "Australia", "Germany", "France", "Italy", "Spain", "Netherlands", "Sweden", "Norway", "Denmark", "Finland", "Switzerland", "Belgium", "Ireland", "New Zealand", "Singapore", "Hong Kong", "Japan", "South Korea"],
+    areaServed: ["Worldwide", "Pakistan", "United States", "United Kingdom", "UAE", "Canada", "Australia"],
     keywords: "software development, web development, mobile apps, custom software, digital solutions",
   }
 
@@ -143,10 +141,10 @@ export default function RootLayout({
     "@type": "WebSite",
     name: "MT International",
     alternateName: "MT International Official",
-    url: "https://www.mtinternationalofficial.com",
+    url: siteUrl,
     potentialAction: {
       "@type": "SearchAction",
-      target: "https://www.mtinternationalofficial.com/search?q={search_term_string}",
+      target: `${siteUrl}/search?q={search_term_string}`,
       "query-input": "required name=search_term_string",
     },
   }
@@ -163,7 +161,6 @@ export default function RootLayout({
         />
       </head>
       <body className={`${inter.className} bg-background text-foreground`} suppressHydrationWarning>
-        {/* ✅ Wrap everything in ThemeProvider */}
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           <Suspense fallback={null}>
             <PageTransitions>{children}</PageTransitions>
