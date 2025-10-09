@@ -50,8 +50,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: `${siteUrl}/MTInternational.png`,
-        width: 1200,
-        height: 630,
+        width: 512,
+        height: 512,
         alt: "MT International - Custom Software Solutions",
       },
     ],
@@ -154,6 +154,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth dark" suppressHydrationWarning>
       <head>
+        {/* ✅ Added logo meta reference */}
+        <link rel="logo" href={`${siteUrl}/MTInternational.png`} type="image/png" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
