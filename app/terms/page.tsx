@@ -4,9 +4,33 @@ import Footer from "../../components/footer"
 
 export const metadata: Metadata = {
   title: "Terms of Service - MT International",
-  description: "Terms of service and conditions for MT International software development services.",
+  description:
+    "Terms of service and conditions for MT International software development services.",
   keywords: "terms of service, legal, mt international, software development",
-}
+  openGraph: {
+    title: "Terms of Service - MT International",
+    description:
+      "Terms of service and conditions for MT International software development services.",
+    url: "https://www.mtinternationalofficial.com/terms",
+    type: "article",
+    images: [
+      {
+        url: "/android-chrome-1024x1024.png",
+        width: 1024,
+        height: 1024,
+        alt: "MT International",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Terms of Service - MT International",
+    description:
+      "Terms of service and conditions for MT International software development services.",
+    images: ["/android-chrome-1024x1024.png"],
+  },
+  alternates: { canonical: "https://www.mtinternationalofficial.com/terms" },
+};
 
 export default function TermsPage() {
   return (
