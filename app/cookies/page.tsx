@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     images: ["/android-chrome-1024x1024.png"],
   },
   alternates: { canonical: "https://www.mtinternationalofficial.com/cookies" },
-};
+}
 
 export default function CookiesPage() {
   return (
