@@ -18,9 +18,9 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/favicon.webp",
-        width: 1200,
-        height: 630,
+        url: "/android-chrome-1024x1024.png",
+        width: 1024,
+        height: 1024,
         alt: "MT International - Premium Software Solutions",
       },
     ],
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     title: "MT International - Premium Software Solutions",
     description:
       "Transform your business with cutting-edge custom software development, web applications, and digital solutions.",
-    images: ["/favicon.webp"],
+    images: ["/android-chrome-1024x1024.png"],
   },
   alternates: {
     canonical: "https://www.mtinternationalofficial.com",
