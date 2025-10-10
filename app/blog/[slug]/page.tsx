@@ -338,17 +338,20 @@ const blogPosts = {
 }
 
 interface Props {
-  params: Promise<{ slug: string }>
+  params: Promise<{ slug: string }>;
 }
 
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL || "https://www.mtinternationalofficial.com";
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug } = await params
-  const post = blogPosts[slug as keyof typeof blogPosts]
+  const { slug } = await params;
+  const post = blogPosts[slug as keyof typeof blogPosts];
 
   if (!post) {
     return {
       title: "Post Not Found - MT International Blog",
-    }
+    };
   }
 
   return {
@@ -356,20 +359,30 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: post.excerpt,
     keywords: `${post.category.toLowerCase()}, software development, ${post.title.toLowerCase()}`,
     openGraph: {
-      images: [`https://mtinternationalofficial.com${post.image}`],
+      images: [`${siteUrl}${post.image}`],
+      url: `${siteUrl}/blog/${slug}`,
+      title: `${post.title} - MT International Blog`,
+      description: post.excerpt,
+      type: "article",
     },
     twitter: {
-      images: [`https://mtinternationalofficial.com${post.image}`],
+      images: [`${siteUrl}${post.image}`],
+      title: `${post.title} - MT International Blog`,
+      description: post.excerpt,
+      card: "summary_large_image",
     },
-  }
+    alternates: {
+      canonical: `${siteUrl}/blog/${slug}`,
+    },
+  };
 }
 
 export default async function BlogPostPage({ params }: Props) {
-  const { slug } = await params
-  const post = blogPosts[slug as keyof typeof blogPosts]
+  const { slug } = await params;
+  const post = blogPosts[slug as keyof typeof blogPosts];
 
   if (!post) {
-    notFound()
+    notFound();
   }
 
   return (
@@ -380,11 +393,11 @@ export default async function BlogPostPage({ params }: Props) {
       </main>
       <Footer />
     </div>
-  )
+  );
 }
 
 export async function generateStaticParams() {
   return Object.keys(blogPosts).map((slug) => ({
     slug,
-  }))
+  }));
 }
