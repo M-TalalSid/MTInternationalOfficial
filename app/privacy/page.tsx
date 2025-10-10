@@ -4,9 +4,33 @@ import Footer from "../../components/footer"
 
 export const metadata: Metadata = {
   title: "Privacy Policy - MT International",
-  description: "Privacy policy and data protection practices for MT International.",
+  description:
+    "Privacy policy and data protection practices for MT International.",
   keywords: "privacy policy, data protection, mt international, gdpr",
-}
+  openGraph: {
+    title: "Privacy Policy - MT International",
+    description:
+      "Privacy policy and data protection practices for MT International.",
+    url: "https://www.mtinternationalofficial.com/privacy",
+    type: "article",
+    images: [
+      {
+        url: "/android-chrome-1024x1024.png",
+        width: 1024,
+        height: 1024,
+        alt: "MT International",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Privacy Policy - MT International",
+    description:
+      "Privacy policy and data protection practices for MT International.",
+    images: ["/android-chrome-1024x1024.png"],
+  },
+  alternates: { canonical: "https://www.mtinternationalofficial.com/privacy" },
+};
 
 export default function PrivacyPage() {
   return (
