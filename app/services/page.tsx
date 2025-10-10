@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.mtinternationalofficial.com/services",
   },
-}
+};
 
 export default function ServicesPage() {
   return (
