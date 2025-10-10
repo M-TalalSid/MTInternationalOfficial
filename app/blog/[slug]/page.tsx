@@ -375,7 +375,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       canonical: `${siteUrl}/blog/${slug}`,
     },
   };
-}
+};
 
 export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params;
@@ -394,10 +394,10 @@ export default async function BlogPostPage({ params }: Props) {
       <Footer />
     </div>
   );
-}
+};
 
 export async function generateStaticParams() {
   return Object.keys(blogPosts).map((slug) => ({
     slug,
   }));
-}
+};
