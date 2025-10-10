@@ -33,7 +33,5 @@ module.exports = {
         crawlDelay: 1,
       },
     ],
-    additionalSitemaps: [`${siteUrl}/sitemap.xml`],
   },
 };
-
