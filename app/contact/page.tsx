@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.mtinternationalofficial.com/contact",
   },
-}
+};
 
 export default function ContactPage() {
   return (
