@@ -15,9 +15,9 @@ export const metadata: Metadata = {
     url: "https://www.mtinternationalofficial.com/blog",
     images: [
       {
-        url: "/blog-banner.webp",
-        width: 1200,
-        height: 630,
+        url: "/android-chrome-1024x1024.png",
+        width: 1024,
+        height: 1024,
         alt: "MT International Blog",
       },
     ],
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Blog - MT International | Latest Tech Insights & Updates",
     description: "Stay updated with the latest trends in software development, technology insights, and industry news",
-    images: ["/blog-banner.webp"],
+    images: ["/android-chrome-1024x1024.png"],
   },
   alternates: {
     canonical: "https://www.mtinternationalofficial.com/blog",
