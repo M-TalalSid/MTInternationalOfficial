@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.mtinternationalofficial.com/blog",
   },
-}
+};
 
 export default function BlogPage() {
   return (
