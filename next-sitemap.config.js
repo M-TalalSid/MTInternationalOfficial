@@ -1,6 +1,5 @@
 /** @type {import('next-sitemap').IConfig} */
-const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL || "https://mtinternationalofficial.com";
+const siteUrl = "https://mtinternationalofficial.com";
 
 module.exports = {
   siteUrl,
@@ -34,5 +33,7 @@ module.exports = {
         crawlDelay: 1,
       },
     ],
+    additionalSitemaps: [`${siteUrl}/sitemap.xml`],
   },
 };
+
