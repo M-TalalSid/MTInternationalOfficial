@@ -4,9 +4,33 @@ import Footer from "../../components/footer"
 
 export const metadata: Metadata = {
   title: "Cookie Policy - MT International",
-  description: "Cookie policy and usage information for MT International website.",
+  description:
+    "Cookie policy and usage information for MT International website.",
   keywords: "cookie policy, cookies, mt international, website tracking",
-}
+  openGraph: {
+    title: "Cookie Policy - MT International",
+    description:
+      "Cookie policy and usage information for MT International website.",
+    url: "https://www.mtinternationalofficial.com/cookies",
+    type: "article",
+    images: [
+      {
+        url: "/android-chrome-1024x1024.png",
+        width: 1024,
+        height: 1024,
+        alt: "MT International",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cookie Policy - MT International",
+    description:
+      "Cookie policy and usage information for MT International website.",
+    images: ["/android-chrome-1024x1024.png"],
+  },
+  alternates: { canonical: "https://www.mtinternationalofficial.com/cookies" },
+};
 
 export default function CookiesPage() {
   return (
