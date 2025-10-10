@@ -20,9 +20,9 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/favicon.webp",
-        width: 1200,
-        height: 630,
+        url: "/android-chrome-1024x1024.png",
+        width: 1024,
+        height: 1024,
         alt: "About MT International",
       },
     ],
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "About Us - MT International",
     description: "Discover MT International’s story, mission, and the expert team driving our success.",
-    images: ["/favicon.webp"],
+    images: ["/android-chrome-1024x1024.png"],
   },
   alternates: {
     canonical: "https://www.mtinternationalofficial.com/about",
